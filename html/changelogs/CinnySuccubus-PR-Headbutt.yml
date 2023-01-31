@@ -1,0 +1,5 @@
+author: CinnySuccubus
+delete-after: False
+
+changes:
+  - rscadd: "Added a headbutt unarmed attack for all races, and a Krogan variant that does more damage and can break airlocks."
