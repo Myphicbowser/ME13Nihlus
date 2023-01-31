@@ -333,3 +333,21 @@ var/global/list/sparring_attack_cache = list()
 	damage = 4
 	attack_name = "heavy hit"
 	attack_sound = /singleton/sound_category/punch_bassy_sound
+
+	/datum/unarmed_attack/headbutt
+	attack_verb = list("headbutt")	// Empty hand hurt intent verb.
+	attack_noun = list("head")
+	desc = "A powerful blow to your opponent. Nobody wins in a headbutt! Well, except a Krogan..."
+	damage = 3						// Same as heavy blow.
+	shredding = 0
+	sharp = 0
+	edge = FALSE
+	damage_type = BRUTE
+	sparring_variant_type = /datum/unarmed_attack/pain_strike/heavy
+
+	attack_name = "headbutt"
+
+/datum/unarmed_attack/headbutt/krogan
+	desc = "A powerful blow to your opponent. Nobody wins in a headbutt! Except you, that is."
+	damage = 5
+	attack_door = 5
