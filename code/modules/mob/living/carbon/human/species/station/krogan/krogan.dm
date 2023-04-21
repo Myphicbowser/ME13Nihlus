@@ -9,12 +9,12 @@
 	default_genders = list(MALE)
 	selectable_pronouns = list(MALE, PLURAL)
 	economic_modifier = 2
-//	language = LANGUAGE_KROGAN
+	language = LANGUAGE_KROGAN
 	primitive_form = SPECIES_MONKEY
 	icobase = 'icons/mob/human_races/krogan/r_krogan.dmi'
 	deform = 'icons/mob/human_races/krogan/r_krogan.dmi'
 	preview_icon = 'icons/mob/human_races/krogan/krogan_preview.dmi'
-//	name_language = LANGUAGE_KROGAN
+	name_language = LANGUAGE_KROGAN
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -67,7 +67,14 @@
 	breath_eff_mul = 6 // 1/6 * breath_eff_mul = fraction of gas consumed
 	mob_size = 13 //their half an inch thick exoskeleton and impressive height.
 
-	blurb = "TBD"
+	blurb = "The krogan are a species of large reptilian bipeds native to the planet Tuchanka, a world known for its harsh environments, \
+	scarce resources, and overabundance of vicious predators. The krogan managed to not only survive on their unforgiving homeworld, but \
+	actually thrived in the extreme conditions. Unfortunately, as krogan society became more technologically advanced, so did their weaponry. \
+	The end result is that they destroyed their homeworld in a nuclear war that reduced their race into primitive warring tribes. With the help \
+	of the salarians, the krogan were 'uplifted' into galactic society, and lent their numbers and military prowess to bring an end to the Rachni Wars. \
+	Ironically, after the rachni were eradicated, the rapidly-expanding krogan became a threat to the galaxy in turn, starting the Krogan Rebellions and \
+	forcing the turians to unleash the genophage. This genetic 'infection' dramatically reduced fertility in krogan females, causing a severe drop in \
+	births secondary to prenatal and postnatal death and, ultimately eliminating the krogan's numerical advantage."
 
 	cold_level_1 = 50
 	cold_level_2 = -1
@@ -122,19 +129,9 @@
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
-/* TBD
-	possible_cultures = list(
-	)
-*/
+	possible_cultures = list(/singleton/origin_item/culture/krogan)
 
 	alterable_internal_organs = list(BP_EYES, BP_LUNGS)
-
-/* keeping this here for their jumpsuit slot later
-/datum/species/krogan/before_equip(var/mob/living/carbon/human/H)
-	. = ..()
-	var/obj/item/clothing/mask/breath/krogan/filter/M = new /obj/item/clothing/mask/breath/krogan/filter(H)
-	H.equip_to_slot_or_del(M, slot_wear_mask)
-*/
 
 
 /datum/species/krogan/is_naturally_insulated()

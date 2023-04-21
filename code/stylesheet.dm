@@ -111,6 +111,11 @@ h1.alert, h2.alert		{color: #000000;}
 .freespeak				{color: #FF4500; font-family: "Trebuchet MS", cursive, sans-serif;}
 .tradeband				{color: #5C16C6; font-family: Georgia, Verdana, sans-serif;}
 
+.asari					{color: #7d1d82;}
+.krogan					{color: #63320c;}
+.salarian				{color: #0b7a1a;}
+.turian					{color: #323240;}
+
 .interface				{color: #330033;}
 
 .good                   {color: #4f7529; font-weight: bold;}

@@ -16,11 +16,16 @@
 	primitive_form = SPECIES_MONKEY_SKRELL
 	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/palm, /datum/unarmed_attack/stomp, /datum/unarmed_attack/kick)
 
-	blurb = "Filler text"
+	blurb = "The asari, native to the planet Thessia, are often considered the most influential and respected sentient species in the galaxy, \
+	and are known for their elegance, diplomacy, and biotic aptitude. This is partly due to the fact that the asari were among the earliest races \
+	to achieve interstellar flight after the Protheans, and the first to discover and settle the Citadel. A mono-gender race, the asari are distinctly \
+	feminine in appearance and possess maternal instincts. Their unique physiology, expressed in a millennium-long lifespan and the ability to reproduce \
+	with a partner of any gender or species, gives them a conservative yet convivial attitude toward other races. Favoring compromise and cooperation over \
+	conflict, the asari were instrumental in proposing and founding the Citadel Council and have been at the heart of galactic society ever since."
 
 	num_alternate_languages = 3
-//	language = LANGUAGE_ASARI
-//	name_language = LANGUAGE_ASARI
+	language = LANGUAGE_ASARI
+	name_language = LANGUAGE_ASARI
 	rarity_value = 3
 
 	grab_mod = 2
@@ -78,14 +83,7 @@
 	max_pulse = 130 // Default 160
 	body_temperature = T0C + 27
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/federation,
-		/singleton/origin_item/culture/non_federation
-	)
-
-	zombie_type = SPECIES_ZOMBIE_SKRELL
-	bodyfall_sound = /singleton/sound_category/bodyfall_skrell_sound
-	footsound = /singleton/sound_category/footstep_skrell_sound
+	possible_cultures = list(/singleton/origin_item/culture/asari)
 
 	alterable_internal_organs = list(BP_HEART, BP_EYES, BP_LUNGS, BP_LIVER, BP_KIDNEYS, BP_STOMACH)
 

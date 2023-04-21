@@ -16,7 +16,7 @@
 	contained_sprite = TRUE
 
 /datum/gear/uniform/turian/medical
-	display_name = "turian medical fumpsuit"
+	display_name = "turian medical jumpsuit"
 	path = /obj/item/clothing/under/turian/medical
 
 /obj/item/clothing/under/turian/medical
