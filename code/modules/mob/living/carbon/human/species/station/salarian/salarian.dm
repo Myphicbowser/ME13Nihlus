@@ -23,7 +23,7 @@
 //	name_language = LANGUAGE_SALARIAN
 	rarity_value = 3
 
-	spawn_flags = CAN_JOIN | IS_WHITELISTED
+	spawn_flags = CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_SKIN_COLOR
 	flags = NO_SLIP
 
