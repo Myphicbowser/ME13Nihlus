@@ -1,14 +1,14 @@
 [
     {
         "role_id": 4,
-        "name": "Head Admin/Dev",
+        "name": "Project Lead",
         "auths": [
             "R_ALL"
         ]
     },
     {
         "role_id": 18,
-        "name": "Primary Administrator",
+        "name": "Head Admin",
         "auths": [
             "R_BUILDMODE", "R_ADMIN", "R_BAN", "R_FUN", "R_STEALTH", "R_SERVER",
             "R_REJUVINATE", "R_VAREDIT", "R_SOUND", "R_SPAWN", "R_PERMISSIONS",
@@ -17,7 +17,7 @@
     },
     {
         "role_id": 8,
-        "name": "Secondary Administrator",
+        "name": "Admin",
         "auths": [
             "R_BUILDMODE", "R_ADMIN", "R_BAN", "R_FUN", "R_STEALTH", "R_SERVER",
             "R_REJUVINATE", "R_VAREDIT", "R_SOUND", "R_SPAWN", "R_MODERATOR",
@@ -47,14 +47,14 @@
     },
     {
         "role_id": 13,
-        "name": "CCIA Agent",
+        "name": "SPECTRE Agent",
         "auths": [
             "R_CCIAA"
         ]
     },
     {
         "role_id": 16,
-        "name": "CCIA Leader",
+        "name": "SPECTRE Task Leader",
         "auths": [
             "R_CCIAA"
         ]

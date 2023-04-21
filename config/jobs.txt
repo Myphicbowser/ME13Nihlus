@@ -31,5 +31,5 @@ Chaplain=1
 Lawyer=2
 Librarian=1
 
-AI=1
-Cyborg=1
+AI=0
+Cyborg=0
