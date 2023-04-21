@@ -66,7 +66,7 @@
 	)
 
 
-	spawn_flags = CAN_JOIN | IS_WHITELISTED
+	spawn_flags = CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#3467cf"
