@@ -29,8 +29,8 @@
 	economic_modifier = 7
 
 	num_alternate_languages = 2
-/*	secondary_langs = list(LANGUAGE_TURIAN)
-	name_language = LANGUAGE_TURIAN to be defined*/
+	language = LANGUAGE_TURIAN
+	name_language = LANGUAGE_TURIAN
 
 	stamina	=	120
 	stamina_recovery = 5
@@ -51,7 +51,14 @@
 	mob_size = 10
 	climb_coeff = 1.35
 
-	blurb = "TBD"
+	blurb = "Turians typically stand over six feet tall or 1.8m, have two long, proportionately thick fingers and an \
+	opposable thumb on each hand, each tipped with talons, and a set of mandibles around their mouths. The most distinguishing \
+	feature of turians is their metallic carapace, which contains trace amounts of thulium. The turians evolved this trait as a defense \
+	against the greater levels of solar radiation that penetrate their homeworld's weak magnetic field. Turian features are avian, \
+	making them resemble humanoid birds or raptors. However, unlike most Earth avian creatures, turians are viviparous and give birth to live young.\
+	Turians are also recognisable by their voices, which have a distinctive flanging effect. Males and females do not differ greatly in terms of \
+	physical appearance, but female turians lack the sweptback cranial crests of their male counterparts and possess larger, cat-like eyes. \
+	The lifespan of a turian is comparable to that of a human."
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -60,10 +67,6 @@
 	heat_level_1 = 420 //Default 360 - Higher is better
 	heat_level_2 = 480 //Default 400
 	heat_level_3 = 1100 //Default 1000
-
-	inherent_verbs = list(
-		/mob/living/carbon/human/proc/tongue_flick
-	)
 
 
 	spawn_flags = CAN_JOIN
@@ -85,7 +88,7 @@
 	cold_discomfort_strings = list(
 		"You feel chilly.",
 		"You feel sluggish and cold.",
-		"Your scales bristle against the cold."
+		"Your carapace bristles against the cold."
 		)
 
 	has_organ = list(
@@ -118,10 +121,5 @@
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
-/obj/item/clothing/under/Initialize()
-	. = ..()
-	sprite_sheets = list(BODYTYPE_TURIAN = 'icons/mob/species/turian/under.dmi')
+	possible_cultures = list(/singleton/origin_item/culture/turian)
 
-/*	possible_cultures = list(
-	)
-*/

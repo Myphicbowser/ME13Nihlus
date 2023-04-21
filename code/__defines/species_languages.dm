@@ -55,6 +55,12 @@
 #define LANGUAGE_AZAZIBA "Sinta'azaziba"
 #define LANGUAGE_SIGN "Sign Language"
 
+//Mass Effect
+#define LANGUAGE_ASARI "Asari"
+#define LANGUAGE_KROGAN "Krogan"
+#define LANGUAGE_SALARIAN "Salarian"
+#define LANGUAGE_TURIAN "Turian"
+
 // Antag Languages
 #define LANGUAGE_CHANGELING "Changeling"
 #define LANGUAGE_BORER "Cortical Link"

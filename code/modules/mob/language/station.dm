@@ -323,7 +323,7 @@
 	key = "4"
 	flags = WHITELISTED | TCOMSSIM
 	syllables = list("af", "if", "ba", "ta", "tha", "id", "jem", "ha", "kha", "dal", "dhl", "ra", "zay", "sen", "um", "shn", "sid", "ad", "ta", "za", "ayn", "gha", "zir", "yn", "fa", "qaf", "iam", "mim", "al", "ja", "non", "ha", "waw", "ya",
-		"hem", "zah", "hml", "ks", "ini", "da", "ks", "iga", "ih", "la", "ulf", "xe", "ayw", "sit", "ah", "aarah", "jalaa", "sirt", "kurt", "turhk", "ust", "irk", "kir", "mir", "ach", "oglu", "bolu", "shek", "she", "ghoz", "miya", "ejdan", 
+		"hem", "zah", "hml", "ks", "ini", "da", "ks", "iga", "ih", "la", "ulf", "xe", "ayw", "sit", "ah", "aarah", "jalaa", "sirt", "kurt", "turhk", "ust", "irk", "kir", "mir", "ach", "oglu", "bolu", "shek", "she", "ghoz", "miya", "ejdan",
 		"haaz", "quq", "taab", "shanha", "an", "saa", "seh", "an'", "e'", "a'", "em'")
 	allow_accents = TRUE
 
@@ -346,3 +346,63 @@
 	if(prob(70))
 		return "[pick(list("PBU","HIU","SINA","ARMA","OSI"))]-[rand(100, 999)]"
 	return pick(ai_names)
+
+//Mass Effect
+
+/datum/language/asari
+	name = LANGUAGE_ASARI
+	short = "THS"
+	desc = "High Thessian (also known as simply 'Thessian', 'asari standard', etc.) is the closest the Asari Republics \
+	 come to a single common language. In fact, though, it is not a language in the usual sense at all - High Thessian \
+	 is rather a framework of rules and conditions for combining multiple individual languages into a single multilanguage. \
+	 Asari speaking High Thessian -- or any of the dozens of other multilanguage structures common in asari space -- switch between \
+	 individual vocabularies and syntaxes, often in mid-sentence or even mid-word, in order to augment the literal meaning of their \
+	 words with additional shades of meaning. In other sapients' terms, the technique bears the hallmarks of poetry, or structured \
+	 musical improvisation."
+	colour = "asari"
+	written_style = "solcommon"
+	key = "j"
+	flags = WHITELISTED | TCOMSSIM
+	syllables = list("a","lia", "ra", "ber","gale","ma","anru","na","rf","sia","ri","ya","kshi","voni","fe","rus","le","ke","na","atte","ken","dra","maj","ser","ice")
+	allow_accents = TRUE
+
+/datum/language/krogan
+	name = LANGUAGE_KROGAN
+	short = "KHE"
+	desc = "Krogan language is highly varied, reflecting adaptations to the surrounding environments of the speakers - a necessity \
+	on Tuchanka and similarly hostile environments, where quick, accurate communication of local conditions and threats is vital. \
+	Loan-words are commonplace in situations where a group has moved into an unfamiliar area, deriving either from local clans on \
+	krogan-held worlds, or non-krogan elsewhere; krogan do not draw distinctions between these additions and their native vocabularies, \
+	regarding the practice as something akin to a linguistic right of conquest. The majority of advanced technological language and jargon \
+	is, unsurprisingly, salarian-derived, although much has been heavily modified since its adoption."
+	colour = "krogan"
+	written_style = "solcommon"
+	key = "k"
+	flags = WHITELISTED | TCOMSSIM
+	syllables = list("mor","lakh","urd","not","gu","jhekt","lo","gh","pa","vex","ara","mor","sor")
+	allow_accents = TRUE
+
+/datum/language/salarian
+	name = LANGUAGE_SALARIAN
+	short = "SAL"
+	desc = "Salarians speak a great many languages, such as Bartuk, Boroka, Covus, and Eredreaen. In many salarian languages, \
+	inflection rather than grammatical particles communicate structure. Word order is often not very important - they want to get \
+	whatever they think is most important said first, then move on to the details."
+	colour = "salarian"
+	written_style = "solcommon"
+	key = "y"
+	flags = WHITELISTED | TCOMSSIM
+	syllables = list("bar","tuk","bo","ro","ka","co","vus","ere","drae","ean","ja","sal","ar","vre")
+	allow_accents = TRUE
+
+/datum/language/turian
+	name = LANGUAGE_TURIAN
+	short = "TUR"
+	desc = "Palavan standard is the language of the Turian homeworld, though the colonies have many sub-dialects of their own, \
+	such as Imperan, Pardavox, and Aplis."
+	colour = "turian"
+	written_style = "solcommon"
+	key = "t"
+	flags = WHITELISTED | TCOMSSIM
+	syllables = list("sil", "vea", "calp", "tius", "pom", "pe", "sia", "ba", "tis", "vel", "via", "ram", "nius", "nih", "lus", "fla", "ria", "comi", "pan", "us", "lut", "at", "na", "oct", "nus")
+	allow_accents = TRUE
