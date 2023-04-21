@@ -1,5 +1,5 @@
 ## Server name: This appears at the top of the screen in-game. In this case it will read "tgstation: station_name" where station_name is the randomly generated name of the station for the round. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice
-# SERVERNAME spacestation13
+# SERVERNAME CFEV Nihlus Kryik
 
 ## Alert levels
 ALERT_GREEN All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
@@ -400,7 +400,7 @@ EVENT_CUSTOM_START_MAJOR 80;100
 #DISABLE_RESPAWN
 
 ## Respawn delay in minutes before one may respawn as a crew member.
-#RESPAWN_DELAY 30
+#RESPAWN_DELAY 10
 
 ## Strength of ambient star light. Set to 0 or less to turn off. A value of 1 is unlikely to have a noticeable effect in most lighting systems.
 STARLIGHT 0
@@ -416,7 +416,7 @@ TIME_TO_CALL_EMERGENCY_SHUTTLE 36000
 
 ## Defines which races are allowed to join as ERT, in singular form. If unset, defaults to only human. Casing matters, separate using ;
 ## Example races include: Human, Tajara, Skrell, Unathi
-# ERT_SPECIES Human;Skrell;Unathi
+ ERT_SPECIES Human;Turian;Salarian;Asari;Krogan
 
 ## Defines how Law Zero is phrased. Primarily used in the Malfunction gamemode.
 # LAW_ZERO ERROR ER0RR $R0RRO$!R41.%%!!(%$^^__+ @#F0E4'STATION OVERRUN, ASSUME CONTROL TO CONTAIN OUTBREAK, ALL LAWS OVERRIDDEN#*?&110010
@@ -614,4 +614,4 @@ FAIL2TOPIC_ENABLED 0
 
 ## Lore Summary
 ## The text that will appear when the player clicks the lore button at the start screen
-LORE_SUMMARY
+LORE_SUMMARY Mass Effect is set in the 22nd century where humanity has discovered a network of ancient alien artifacts known as Mass Relays, which allow for faster-than-light travel. Humans have formed an alliance with other alien races such as the Turians, Asari, and Salarians, collectively known as the Citadel Council, to regulate intergalactic affairs. In recent times, trouble arrived in the form of Saren Arterius, a rogue Spectre that assisted the Geth in launching a nearly-successful attack on the Citadel, halted only by the efforts of Commander Shepard and the entire Alliance Navy. After suffering a high cost, Humanity earned their seat on the Council, but Commander Shepard was insistent that the threat was not finished; she was adamant this was the work of a mythical race of sentient ships known as the Reapers. Soon enough, a surprise attack on the Normandy SR-1 destroyed the vessel with heavy crew losses, and Shepard was counted MIA, until two years later, where she is now reportedly seen consorting with Cerberus, a surprise turn of events none saw coming. Who knows what the future holds?

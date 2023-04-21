@@ -53,3 +53,4 @@ Wisdom
 XOR
 Y2K
 ZE-M3
+EDI
