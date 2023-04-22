@@ -653,6 +653,7 @@
 #include "code\game\jobs\whitelist.dm"
 #include "code\game\jobs\faction\admin.dm"
 #include "code\game\jobs\faction\citadel.dm"
+#include "code\game\jobs\faction\ercs.dm"
 #include "code\game\jobs\faction\faction.dm"
 #include "code\game\jobs\faction\hephaestus.dm"
 #include "code\game\jobs\faction\idris.dm"
