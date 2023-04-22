@@ -18,3 +18,5 @@
 		/datum/species/turian,
 		/datum/species/salarian
 	)
+
+	job_species_blacklist = list("Corporate Liaison" = SPECIES_KROGAN)
