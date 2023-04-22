@@ -1,10 +1,10 @@
 /datum/faction/ercs
 	name = "Elanus Risk Control Services"
 	description = {"<p>
-Elanus Risk Control Services (ERCS) is a private security corporation that provides a host of services ranging from simple event security to professional mercenary companies and starships to counter piracy.
- ERCS began as a privately-owned turian security firm but has since expanded into an interstellar conglomerate after opening itself up to foreign investment.
-  Their affordable yet reliable armor, weapons and omni-tools are popular with security personnel and mercenaries.
-   They also specialize in riot equipment and dangerous situations.
+	Elanus Risk Control Services (ERCS) is a private security corporation that provides a host of services ranging from simple event security to professional mercenary companies and starships to counter piracy.
+	ERCS began as a privately-owned turian security firm but has since expanded into an interstellar conglomerate after opening itself up to foreign investment.
+	Their affordable yet reliable armor, weapons and omni-tools are popular with security personnel and mercenaries.
+	They also specialize in riot equipment and dangerous situations.
 	</p>"}
 	departments = {"Security"}
 	title_suffix = "ERCS"
@@ -17,9 +17,4 @@ Elanus Risk Control Services (ERCS) is a private security corporation that provi
 		/datum/species/krogan,
 		/datum/species/turian,
 		/datum/species/salarian
-	)
-
-	job_species_blacklist = list(
-		"Corporate Liaison" = list(
-		SPECIES_KROGAN
 	)
