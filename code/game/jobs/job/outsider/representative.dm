@@ -12,8 +12,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_ASARI = 120,
+		SPECIES_SALARIAN = 12
 	)
 
 	access = list(access_lawyer, access_maint_tunnels)
@@ -24,7 +24,7 @@
 		"Corporate Executive"
 		)
 	outfit = /datum/outfit/job/representative
-	blacklisted_species = list(SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/representative
 	name = "NanoTrasen Corporate Liaison"
@@ -102,14 +102,16 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 150,
-		SPECIES_SKRELL_AXIORI = 150
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 15,
+		SPECIES_KROGAN = 200
 	)
 
 	ideal_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 170,
-		SPECIES_SKRELL_AXIORI = 170
+		SPECIES_ASARI = 170,
+		SPECIES_SALARIAN = 20,
+		SPECIES_KROGAN = 300
 	)
 
 	access = list(access_consular, access_maint_tunnels)
