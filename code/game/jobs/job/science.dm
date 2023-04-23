@@ -13,8 +13,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 35,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_ASARI = 350,
+		SPECIES_SALARIAN = 20
 	)
 
 	access = list(
@@ -32,12 +32,12 @@
 	minimal_player_age = 14
 	ideal_character_age = list(
 		SPECIES_HUMAN = 50,
-		SPECIES_SKRELL = 100,
-		SPECIES_SKRELL_AXIORI = 100
+		SPECIES_ASARI = 400,
+		SPECIES_SALARIAN = 30
 	)
 	outfit = /datum/outfit/job/rd
 
-	blacklisted_species = list(SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_VAURCA_BREEDER, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/rd
 	name = "Research Director"
@@ -77,8 +77,9 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 12,
+		SPECIES_KROGAN = 500
 	)
 
 	access = list(access_tox, access_tox_storage, access_research, access_intrepid)
@@ -129,8 +130,9 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 12,
+		SPECIES_KROGAN = 500
 	)
 
 	access = list(access_tox, access_tox_storage, access_research, access_xenoarch, access_intrepid)
@@ -160,8 +162,9 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 12,
+		SPECIES_KROGAN = 500
 	)
 
 	access = list(access_tox, access_tox_storage, access_research, access_xenobiology)
@@ -192,8 +195,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 12
 	)
 
 	access = list(access_tox_storage, access_research, access_xenobotany, access_tox)
@@ -202,7 +205,7 @@
 	minimal_player_age = 14
 
 	outfit = /datum/outfit/job/scientist/xenobotanist
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 
 /datum/outfit/job/scientist/xenobotanist
