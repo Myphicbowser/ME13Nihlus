@@ -10,7 +10,7 @@
 
 	//Vars related to human mobs
 	outfit = /datum/outfit/admin/random/visitor
-	possible_species = list(SPECIES_HUMAN,SPECIES_HUMAN_OFFWORLD,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_TAJARA,SPECIES_TAJARA_MSAI,SPECIES_TAJARA_ZHAN,SPECIES_UNATHI,SPECIES_VAURCA_WARRIOR,SPECIES_VAURCA_WORKER)
+	possible_species = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD, SPECIES_SALARIAN, SPECIES_KROGAN, SPECIES_ASARI, SPECIES_TURIAN)
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
 	assigned_role = "Pod Survivor"
@@ -25,13 +25,13 @@
 	if(t == "star")
 		welcome_message = "You are a stranded star!<br>You were relaxing comfortably in your cryo pod as tragedy struck - the pilot of your luxury yacht fell asleep under some mysterious circumstances. You were unceremoniously stuffed into an escape pod, and left to wander in space. What a despicable, low-quality plot to get rid of you. Should've chosen murder instead - you certainly know you'll convince someone nice to lend you a shuttle."
 		outfit = /datum/outfit/admin/pod/star
-		possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
+		possible_species = list(SPECIES_HUMAN, SPECIES_ASARI, SPECIES_TURIAN, SPECIES_SALARIAN)
 	else if(t == "priest")
 		welcome_message = "You are a stranded Trinary Perfection priest!<br>You were traveling around space on your small shuttle, preaching peacefully of the future divinity of the synthetics, and the grand purpose of mankind as the ones to help them achieve that goal. Unfortunately, Dominians don't seem to be as peaceful in disagreeing with your views - and had to evacuate your shot-down ship. Have your prayers to the Divines helped you now?"
 		outfit = /datum/outfit/admin/pod/priest
 		possible_species = list(SPECIES_HUMAN)
 	else if(t == "rep")
-		welcome_message = "You are a stranded Idris Incorporated representative!<br>You were traveling back from your business in Sol to the Mendell City HQ. Unfortunately, after a very unusual set of circumstances, the engine broke down just almost as you got back. You're stranded somewhere nearby - perhaps your excellent customer service and negotiation skills might get you a ride back to Mendell?"
+		welcome_message = "You are a stranded Cord-Hislop Aerospace representative!<br>You were traveling back from your business in the Terminus Systems to the Sol HQ. Unfortunately, after a very unusual set of circumstances, the engine broke down just almost as you got back. You're stranded somewhere nearby - perhaps your excellent customer service and negotiation skills might get you a ride back to Sol?"
 		outfit = /datum/outfit/admin/pod/rep
 		possible_species = list(SPECIES_HUMAN)
 	else if(t == "hunter")
@@ -42,7 +42,7 @@
 		welcome_message = "You are a stranded occultist!<br>This unfortunate turn of events was in the cards. Nonetheless, you managed to save your most prized possessions - your magical deck of cards and your ominous, definitely magical robes. The cards have also told you that your bad luck will surely be followed by good fortune."
 		outfit = /datum/outfit/admin/pod/occultist
 	else if(t == "pmc")
-		welcome_message = "You are a stranded Eridani paramilitary sergeant!<br>You aren't getting paid enough for this shit. Where's the pickup shuttle?"
+		welcome_message = "You are a stranded Cerberus soldier!<br>You aren't getting paid enough for this shit. Where's the pickup shuttle?"
 		outfit = /datum/outfit/admin/pod/pmc
 		possible_species = list(SPECIES_HUMAN) // no cycler in the pod, spawns in a voidsuit
 	else if(t == "tcfl")
@@ -54,18 +54,18 @@
 		outfit = /datum/outfit/admin/pod/fsf
 		possible_species = list(SPECIES_HUMAN)
 	else if(t == "scc")
-		welcome_message = "You are a stranded Stellar Corporate Conglomerate low-level functionary!<br>A routine inspection of SCC assets in the Romanovich cloud turned into disaster when your shuttle's reactor suddenly and mysteriously failed. You narrowly escaped with your life. Worst of all? You lost your paperwork."
+		welcome_message = "You are a stranded Citadel Fleet Officer!<br>A routine inspection of CF assets in the Romanovich cloud turned into disaster when your shuttle's reactor suddenly and mysteriously failed. You narrowly escaped with your life. Worst of all? You lost your paperwork."
 		outfit = /datum/outfit/admin/pod/scc
-		possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
+		possible_species = list(SPECIES_HUMAN, SPECIES_SALARIAN, SPECIES_ASARI, SPECIES_TURIAN)
 	else if(t == "fib")
 		welcome_message = "You are a stranded Federal Investigation Bureau Agent!<br>What was supposed to be a standard investigation turned into a nightmare when the vessel you were supposed to board opened fire! You just managed to reach an escape pod before your own ship was turned into smoldering rubble. You really need some coffee."
 		outfit = /datum/outfit/admin/pod/fib
 		possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
 
 	else
-		welcome_message = "You are a stranded drugs smuggler!<br>You shouldn't have had the fucking Tajara pilot your ship. <i>Of course</i> we crashed into a rock. Good thing you've got some of the stuff with you while evacuating - maybe you'll crash somewhere you could sell it for a ticket back?"
+		welcome_message = "You are a stranded drugs smuggler!<br>You shouldn't have had the fucking Salarian pilot your ship. <i>Of course</i> we crashed into a rock. Good thing you've got some of the stuff with you while evacuating - maybe you'll crash somewhere you could sell it for a ticket back?"
 		outfit = /datum/outfit/admin/pod/smuggler
-		possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_UNATHI)
+		possible_species = list(SPECIES_HUMAN, SPECIES_ASARI, SPECIES_SALARIAN, SPECIES_TURIAN, SPECIES_KROGAN)
 
 /datum/ghostspawner/human/rescuepodsurv/select_spawnlocation(var/use=TRUE)
 	var/list/possible_areas = list(/area/exoplanet/barren/asteroid)
@@ -171,7 +171,7 @@
 	)
 
 /datum/outfit/admin/pod/rep/get_id_assignment()
-	return "Corporate Liaison (Idris)"
+	return "Corporate Liaison (Cord-Hislop)"
 
 /datum/outfit/admin/pod/rep/get_id_rank()
 	return "Corporate Liaison"
@@ -249,7 +249,7 @@
 	uniform = /obj/item/clothing/under/rank/security/pmc
 
 /datum/outfit/admin/pod/pmc/get_id_assignment()
-	return "Security Officer (PMCG)"
+	return "Security Officer (Cerberus)"
 
 /datum/outfit/admin/pod/pmc/get_id_rank()
 	return "Security Officer"
@@ -336,7 +336,7 @@
 
 
 /datum/outfit/admin/pod/scc/get_id_assignment()
-	return "Stellar Corporate Conglomerate Functionary"
+	return "Citadel Fleet Junior Officer"
 
 /datum/outfit/admin/pod/scc/get_id_rank()
 	return "Stellar Corporate Conglomerate Functionary"
