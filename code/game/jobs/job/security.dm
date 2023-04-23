@@ -13,8 +13,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_ASARI = 300,
+		SPECIES_SALARIAN = 30
 	)
 
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
@@ -30,7 +30,7 @@
 	minimal_player_age = 14
 	outfit = /datum/outfit/job/hos
 
-	blacklisted_species = list(SPECIES_HUMAN_OFFWORLD, SPECIES_TAJARA_ZHAN, SPECIES_DIONA, SPECIES_DIONA_COEUS, SPECIES_IPC_G2, SPECIES_IPC_ZENGHU, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_HUMAN_OFFWORLD, SPECIES_KROGAN)
 
 /datum/outfit/job/hos
 	name = "Head of Security"
@@ -79,8 +79,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI =150,
+		SPECIES_SALARIAN = 15
 	)
 
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue, access_external_airlocks, access_weapons)
@@ -88,7 +88,7 @@
 	minimal_player_age = 7
 	outfit = /datum/outfit/job/warden
 
-	blacklisted_species = list(SPECIES_IPC_ZENGHU, SPECIES_VAURCA_BULWARK, SPECIES_DIONA_COEUS, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/warden
 	name = "Warden"
@@ -132,15 +132,15 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 15
 	)
 
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_weapons)
 	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_weapons)
 	minimal_player_age = 3
 	outfit = /datum/outfit/job/forensics
-	blacklisted_species = list(SPECIES_IPC_ZENGHU, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/forensics
 	name = "Investigator"
@@ -181,8 +181,9 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 15,
+		SPECIES_KROGAN = 200
 	)
 
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks, access_weapons)
@@ -190,7 +191,7 @@
 	minimal_player_age = 7
 	outfit = /datum/outfit/job/officer
 
-	blacklisted_species = list(SPECIES_IPC_ZENGHU, SPECIES_VAURCA_BULWARK, SPECIES_DIONA_COEUS, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
 
 /datum/outfit/job/officer
 	name = "Security Officer"
@@ -233,8 +234,9 @@
 	outfit = /datum/outfit/job/intern_sec
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 105,
+		SPECIES_SALARIAN = 12,
+		SPECIES_KROGAN = 100
 	)
 
 	blacklisted_species = list(SPECIES_IPC_ZENGHU, SPECIES_VAURCA_BULWARK, SPECIES_DIONA_COEUS, SPECIES_VAURCA_BREEDER)
