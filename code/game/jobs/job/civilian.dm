@@ -57,8 +57,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 105,
+		SPECIES_SALARIAN = 10
 	)
 
 	access = list(access_hydroponics, access_bar, access_kitchen)
@@ -107,8 +107,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 105,
+		SPECIES_SALARIAN = 10
 	)
 
 	access = list(access_hydroponics, access_bar, access_kitchen)
@@ -205,8 +205,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 20,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 120,
+		SPECIES_SALARIAN = 12
 	)
 
 	access = list(access_journalist, access_maint_tunnels)
@@ -404,7 +404,7 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 70,
+		SPECIES_ASARI = 250,
 		SPECIES_SKRELL_AXIORI = 70
 	)
 
@@ -415,13 +415,13 @@
 
 	ideal_character_age = list(
 		SPECIES_HUMAN = 40,
-		SPECIES_SKRELL = 90,
-		SPECIES_SKRELL_AXIORI = 90
+		SPECIES_ASARI = 350,
+		SPECIES_SALARIAN = 20
 	)
 
 	outfit = /datum/outfit/job/operations_manager
 
-	blacklisted_species = list(SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/operations_manager
 	name = "Operations Manager"
@@ -461,15 +461,15 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 120,
+		SPECIES_SALARIAN = 12
 	)
 
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_ship_weapons, access_cargo_bot, access_mining, access_mining_station)
 	minimal_access = list(access_cargo, access_cargo_bot, access_ship_weapons, access_mailsorting)
 	outfit = /datum/outfit/job/hangar_tech
 
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/hangar_tech
 	name = "Hangar Technician"
@@ -502,15 +502,15 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 120,
+		SPECIES_SALARIAN = 14
 	)
 
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_mining, access_mining_station)
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
 	outfit = /datum/outfit/job/mining
 
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/mining
 	name = "Shaft Miner"
@@ -554,8 +554,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 55,
-		SPECIES_SKRELL_AXIORI = 55
+		SPECIES_ASARI = 250,
+		SPECIES_SALARIAN = 14
 	)
 
 	access = list(access_robotics, access_tech_storage, access_mailsorting)
@@ -565,7 +565,7 @@
 
 	outfit = /datum/outfit/job/machinist
 
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/machinist
 	name = "Machinist"
