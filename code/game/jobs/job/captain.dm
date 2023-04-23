@@ -9,7 +9,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	intro_prefix = "the"
-	supervisors = "company officials and Corporate Regulations"
+	supervisors = "Citadel Fleet Brass and Corporate Regulations"
 	selection_color = "#114dc1"
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
@@ -18,19 +18,19 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 35,
-		SPECIES_SKRELL = 100,
-		SPECIES_SKRELL_AXIORI = 100
+		SPECIES_ASARI = 350,
+		SPECIES_SALARIAN = 20
 	)
 
 	ideal_character_age = list(
 		SPECIES_HUMAN = 70,
-		SPECIES_SKRELL = 120,
-		SPECIES_SKRELL_AXIORI = 120
+		SPECIES_ASARI = 700,
+		SPECIES_SALARIAN = 25
 	) // Old geezer captains ftw
 
 	outfit = /datum/outfit/job/captain
 
-	blacklisted_species = list(SPECIES_HUMAN_OFFWORLD, SPECIES_TAJARA, SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_UNATHI, SPECIES_DIONA, SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER, SPECIES_DIONA, SPECIES_DIONA_COEUS)
+	blacklisted_species = list(SPECIES_HUMAN_OFFWORLD, SPECIES_KROGAN)
 
 /datum/outfit/job/captain
 	name = "Captain"
@@ -96,14 +96,14 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 10
 	ideal_character_age = list(
 		SPECIES_HUMAN = 50,
-		SPECIES_SKRELL = 100,
-		SPECIES_SKRELL_AXIORI = 100
+		SPECIES_ASARI = 250,
+		SPECIES_SALARIAN = 20
 	)
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_ASARI = 200,
+		SPECIES_SALARIAN = 15
 	)
 
 	outfit = /datum/outfit/job/xo
@@ -117,7 +117,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_crematorium, access_kitchen, access_hydroponics, access_chapel_office, access_library, access_research, access_mining, access_mailsorting,
 			            access_janitor,   access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_weapons, access_journalist, access_bridge_crew, access_intrepid, access_teleporter)
 
-	blacklisted_species = list(SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/xo
 	name = "Executive Officer"
@@ -158,14 +158,14 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 5
 	ideal_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 75,
-		SPECIES_SKRELL_AXIORI = 75
+		SPECIES_ASARI = 250,
+		SPECIES_SALARIAN = 20
 	)
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 55,
-		SPECIES_SKRELL_AXIORI = 55
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 15
 	)
 
 	outfit = /datum/outfit/job/bridge_crew
@@ -173,7 +173,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	access = list(access_eva, access_heads, access_maint_tunnels, access_weapons, access_bridge_crew, access_intrepid, access_teleporter)
 	minimal_access = list(access_heads, access_eva, access_gateway, access_weapons, access_bridge_crew, access_intrepid, access_teleporter)
 
-	blacklisted_species = list(SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/bridge_crew
 	name = "Bridge Crew"
