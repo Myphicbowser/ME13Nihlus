@@ -13,8 +13,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 35,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_ASARI = 250,
+		SPECIES_SALARIAN = 20
 	)
 
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
@@ -29,12 +29,12 @@
 	minimal_player_age = 10
 	ideal_character_age = list(
 		SPECIES_HUMAN = 50,
-		SPECIES_SKRELL = 100,
-		SPECIES_SKRELL_AXIORI = 100
+		SPECIES_ASARI = 400,
+		SPECIES_SALARIAN = 20
 	)
 	outfit = /datum/outfit/job/cmo
 
-	blacklisted_species = list(SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/cmo
 	name = "Chief Medical Officer"
@@ -75,8 +75,9 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 125,
+		SPECIES_SALARIAN = 15,
+		SPECIES_KROGAN = 300
 	)
 
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva)
@@ -99,14 +100,14 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 15
 	)
 
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_genetics, access_eva)
 	outfit = /datum/outfit/job/doctor/surgeon
-	blacklisted_species = list(SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/doctor
 	name = "Physician"
@@ -163,14 +164,14 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 26,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 200,
+		SPECIES_SALARIAN = 13
 	)
 
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_pharmacy, access_virology)
 	outfit = /datum/outfit/job/pharmacist
-	blacklisted_species = list(SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/pharmacist
 	name = "Pharmacist"
@@ -211,8 +212,8 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 200,
+		SPECIES_SALARIAN = 13
 	)
 
 	supervisors = "the chief medical officer"
@@ -270,15 +271,15 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 55,
-		SPECIES_SKRELL_AXIORI = 55
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 13
 	)
 
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_eva, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_external_airlocks, access_psychiatrist, access_first_responder)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_eva, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_external_airlocks, access_first_responder)
 	outfit = /datum/outfit/job/med_tech
 
-	blacklisted_species = list(SPECIES_DIONA, SPECIES_DIONA_COEUS, SPECIES_IPC_G2, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/med_tech
 	name = "First Responder"
@@ -328,11 +329,11 @@
 	minimal_access = list(access_medical, access_medical_equip)
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 105,
+		SPECIES_SALARIAN = 10
 	)
 	outfit = /datum/outfit/job/intern_med
-	blacklisted_species = list(SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/intern_med
 	name = "Medical Intern"
