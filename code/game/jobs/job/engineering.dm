@@ -13,14 +13,14 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_ASARI = 150,
+		SPECIES_SALARIAN = 15
 	)
 
 	ideal_character_age = list(
 		SPECIES_HUMAN = 50,
-		SPECIES_SKRELL = 100,
-		SPECIES_SKRELL_AXIORI = 100
+		SPECIES_ASARI = 200,
+		SPECIES_SALARIAN = 25
 	)
 
 
@@ -35,7 +35,7 @@
 	minimal_player_age = 7
 	outfit = /datum/outfit/job/chief_engineer
 
-	blacklisted_species = list(SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/chief_engineer
 	name = "Chief Engineer"
@@ -86,8 +86,9 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 105,
+		SPECIES_SALARIAN = 10,
+		SPECIES_KROGAN = 100
 	)
 
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_ship_weapons, access_external_airlocks, access_construction, access_atmospherics, access_leviathan)
@@ -145,14 +146,14 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 60,
-		SPECIES_SKRELL_AXIORI = 60
+		SPECIES_ASARI = 105,
+		SPECIES_SALARIAN = 10
 	)
 
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_external_airlocks)
 	minimal_access = list(access_eva, access_engine, access_atmospherics, access_maint_tunnels, access_emergency_storage, access_construction, access_external_airlocks)
 	outfit = /datum/outfit/job/atmos
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
+	blacklisted_species = list(SPECIES_KROGAN)
 
 /datum/outfit/job/atmos
 	name = "Atmospheric Technician"
@@ -206,8 +207,9 @@
 
 	minimum_character_age = list(
 		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_ASARI = 100,
+		SPECIES_SALARIAN = 10,
+		SPECIES_KROGAN = 100
 	)
 
 /datum/outfit/job/intern_eng
