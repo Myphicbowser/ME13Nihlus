@@ -6,7 +6,7 @@
 
 /obj/item/clothing/under/turian
 	name = "turian jumpsuit"
-	desc = "A plain jumpsuit fitted to the frame of a turian"
+	desc = "A plain jumpsuit fitted to the avian frame of a turian"
 	species_restricted = list(BODYTYPE_TURIAN)
 	icon = 'icons/mob/species/turian/under.dmi'
 	icon_override = 'icons/mob/species/turian/under.dmi'
@@ -95,3 +95,22 @@
 	desc = "It's a navy jumpsuit worn by those that act as the ship's command."
 	icon_state = "command"
 	item_state = "command"
+
+//shoes
+
+/datum/gear/shoes/turian
+	display_name = "Turian Boots"
+	whitelisted = list(SPECIES_TURIAN)
+	sort_category = "Xenowear - Turian"
+	path = /obj/item/clothing/shoes/turian
+
+/obj/item/clothing/shoes/turian
+	name = "turian shoes"
+	desc = "Plain boots fitted for the avian feet of a turian"
+	species_restricted = list(BODYTYPE_TURIAN)
+	icon = 'icons/mob/species/turian/shoes.dmi'
+	icon_override = 'icons/mob/species/turian/shoes.dmi'
+	sprite_sheets = list(BODYTYPE_turian = 'icons/mob/species/turian/shoes.dmi')
+	icon_state = ""
+	item_state = ""
+	contained_sprite = TRUE

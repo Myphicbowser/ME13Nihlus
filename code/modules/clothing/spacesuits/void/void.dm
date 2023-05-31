@@ -24,20 +24,25 @@
 	//Species-specific stuff.
 	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_ZENGHU)
 	sprite_sheets_refit = list(
-		BODYTYPE_UNATHI = 'icons/mob/species/unathi/helmet.dmi',
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
-		BODYTYPE_SKRELL = 'icons/mob/species/skrell/helmet.dmi',
-		BODYTYPE_VAURCA = 'icons/mob/species/vaurca/helmet.dmi',
-		BODYTYPE_IPC = 'icons/mob/species/machine/helmet.dmi'
+		BODYTYPE_KROGAN = 'icons/mob/species/krogan/helmet.dmi',
+//		BODYTYPE_ASARI = 'icons/mob/species/asari/helmet.dmi',
+		BODYTYPE_SALARIAN = 'icons/mob/species/salarian/helmet.dmi',
+		BODYTYPE_TURIAN = 'icons/mob/species/turian/helmet.dmi',
 	)
 	sprite_sheets_obj = list(
-		BODYTYPE_UNATHI = 'icons/obj/clothing/species/unathi/hats.dmi',
-		BODYTYPE_TAJARA = 'icons/obj/clothing/species/tajaran/hats.dmi',
-		BODYTYPE_SKRELL = 'icons/obj/clothing/species/skrell/hats.dmi',
-		BODYTYPE_VAURCA = 'icons/obj/clothing/species/vaurca/hats.dmi',
-		BODYTYPE_IPC = 'icons/obj/clothing/species/machine/hats.dmi'
+		BODYTYPE_KROGAN = 'icons/mob/species/krogan/helmet.dmi',
+//		BODYTYPE_ASARI = 'icons/mob/species/asari/helmet.dmi',
+		BODYTYPE_SALARIAN = 'icons/mob/species/salarian/helmet.dmi',
+		BODYTYPE_TURIAN = 'icons/mob/species/turian/helmet.dmi',
 	)
-
+//proper obj sprites don't exist yet
+/*	sprite_sheets_obj = list(
+		BODYTYPE_KROGAN = 'icons/obj/clothing/species/krogan/hats.dmi',
+//		BODYTYPE_ASARI = 'icons/obj/clothing/species/asari/hats.dmi',
+		BODYTYPE_SALARIAN = 'icons/obj/clothing/species/salarian/hats.dmi',
+		BODYTYPE_TURIAN = 'icons/obj/clothing/species/turian/hats.dmi','
+	)
+*/
 	light_overlay = "helmet_light"
 
 /obj/item/clothing/suit/space/void
@@ -64,20 +69,24 @@
 
 	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_ZENGHU)
 	sprite_sheets_refit = list(
-		BODYTYPE_UNATHI = 'icons/mob/species/unathi/suit.dmi',
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/suit.dmi',
-		BODYTYPE_SKRELL = 'icons/mob/species/skrell/suit.dmi',
-		BODYTYPE_VAURCA = 'icons/mob/species/vaurca/suit.dmi',
-		BODYTYPE_IPC = 'icons/mob/species/machine/suit.dmi'
+		BODYTYPE_KROGAN = 'icons/mob/species/krogan/suit.dmi',
+//		BODYTYPE_ASARI = 'icons/mob/species/asari/suit.dmi',
+		BODYTYPE_SALARIAN = 'icons/mob/species/salarian/suit.dmi',
+		BODYTYPE_TURIAN = 'icons/mob/species/turian/suit.dmi',
 	)
 	sprite_sheets_obj = list(
-		BODYTYPE_UNATHI = 'icons/obj/clothing/species/unathi/suits.dmi',
-		BODYTYPE_TAJARA = 'icons/obj/clothing/species/tajaran/suits.dmi',
-		BODYTYPE_SKRELL = 'icons/obj/clothing/species/skrell/suits.dmi',
-		BODYTYPE_VAURCA = 'icons/obj/clothing/species/vaurca/suits.dmi',
-		BODYTYPE_IPC= 'icons/obj/clothing/species/machine/suits.dmi'
+		BODYTYPE_KROGAN = 'icons/mob/species/krogan/suit.dmi',
+//		BODYTYPE_ASARI = 'icons/mob/species/asari/suit.dmi',
+		BODYTYPE_SALARIAN = 'icons/mob/species/salarian/suit.dmi',
+		BODYTYPE_TURIAN = 'icons/mob/species/turian/suit.dmi',
 	)
-
+/*	sprite_sheets_obj = list(
+		BODYTYPE_KROGAN = 'icons/obj/clothing/species/krogan/suits.dmi',
+//		BODYTYPE_ASARI = 'icons/obj/clothing/species/asari/suits.dmi',
+		BODYTYPE_SALARIAN = 'icons/obj/clothing/species/salarian/suits.dmi',
+		BODYTYPE_TURIAN = 'icons/obj/clothing/species/turian/suits.dmi',
+	)
+*/
 	action_button_name = "Toggle Helmet"
 	var/helmet_deploy_sound = 'sound/items/helmet_close.ogg'
 	var/helmet_retract_sound = 'sound/items/helmet_open.ogg'
