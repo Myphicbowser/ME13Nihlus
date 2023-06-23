@@ -14,5 +14,6 @@
 	allowed_species_types = list(
 		/datum/species/asari,
 		/datum/species/turian,
-		/datum/species/salarian
+		/datum/species/salarian,
+		/datum/species/human
 	)
