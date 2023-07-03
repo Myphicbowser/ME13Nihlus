@@ -388,26 +388,6 @@ datum/gear/suit/colorvest
 	path = /obj/item/clothing/suit/storage/toggle/asymmetriccoat
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/suit/himeo
-	display_name = "himean coat selection"
-	path = /obj/item/clothing/suit/storage/toggle/himeo
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/himeo, /singleton/origin_item/origin/ipc_himeo, /singleton/origin_item/origin/free_council)
-
-/datum/gear/suit/himeo/New()
-	..()
-	var/list/coat = list()
-	coat["brown himean bekesha"] = /obj/item/clothing/suit/storage/toggle/himeo
-	coat["grey himean bekesha"] = /obj/item/clothing/suit/storage/toggle/himeo/grey
-	gear_tweaks += new /datum/gear_tweak/path(coat)
-
-/datum/gear/suit/vysoka
-	display_name = "chokha selection"
-	description = "A selection of Vysokan chokhas."
-	path = /obj/item/clothing/suit/storage/vysoka
-	flags = GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/vysoka, /singleton/origin_item/origin/ipc_vysoka)
-
 /datum/gear/suit/vysoka/New()
 	..()
 	var/list/coat = list()
@@ -419,35 +399,3 @@ datum/gear/suit/colorvest
 	display_name = "submariner jacket"
 	path = /obj/item/clothing/suit/storage/toggle/overlay/submariner
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-
-/datum/gear/suit/konyang
-	display_name = "konyanger outerwear selection"
-	description = "A selection of jackets and coats from the wind-beaten shores of Konyang."
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat/konyang
-	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
-
-/datum/gear/suit/konyang/New()
-	..()
-	var/list/konyangcoat = list()
-	konyangcoat["konyang village coat"] = /obj/item/clothing/suit/storage/hooded/wintercoat/konyang
-	konyangcoat["red konyanger jacket"] = /obj/item/clothing/suit/storage/toggle/konyang
-	konyangcoat["red short-sleeved konyanger jacket"] = /obj/item/clothing/suit/storage/toggle/konyang/akira
-	konyangcoat["red konyanger jumpjacket"] = /obj/item/clothing/suit/storage/toggle/konyang/pants
-	konyangcoat["orange konyanger jumpjacket"] = /obj/item/clothing/suit/storage/toggle/konyang/orange
-	konyangcoat["blue konyanger jumpjacket"] = /obj/item/clothing/suit/storage/toggle/konyang/blue
-	gear_tweaks += new /datum/gear_tweak/path(konyangcoat)
-
-/datum/gear/suit/gadpathur
-	display_name = "gadpathurian coat selection"
-	path = /obj/item/clothing/suit/storage/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/gadpathur)
-
-/datum/gear/suit/gadpathur/New()
-	..()
-	var/list/gadpathur_coat = list()
-	gadpathur_coat["gadpathurian overcoat"] = /obj/item/clothing/suit/storage/gadpathur
-	gadpathur_coat["gadpathurian trenchcoat"] = /obj/item/clothing/suit/storage/toggle/trench/gadpathur
-	gadpathur_coat["gadpathurian leather coat"] = /obj/item/clothing/suit/storage/toggle/trench/gadpathur/leather
-	gadpathur_coat["thermal coat"] = /obj/item/clothing/suit/storage/toggle/leather_jacket/gadpathur
-	gear_tweaks += new /datum/gear_tweak/path(gadpathur_coat)

@@ -17,12 +17,8 @@
 		/datum/unarmed_attack/palm,
 		/datum/unarmed_attack/bite
 	)
-	blurb = "Humanity originated in the Sol system, and over the last four centuries has spread colonies across a wide swathe of space. \
-	They hold a wide range of forms and creeds.<br><br>\
-	The Sol Alliance is still massively influential, but independent human nations have managed to shake off its dominance and forge their \
-	own path. Driven by an unending hunger for wealth, powerful corporate interests are bringing untold wealth to humanity. Unchecked \
-	megacorporations have sparked secretive factions to fight their influence, while there is always the risk of someone digging too \
-	deep into the secrets of the galaxy..."
+	blurb = "Humans, from the planet Earth, are the newest sentient species of notable size to enter the galactic stage and are the most rapidly expanding and developing. \
+	They independently discovered a Prothean data cache on Mars in 2148, and the mass relay networks shortly thereafter."
 	num_alternate_languages = 2
 	secondary_langs = list(LANGUAGE_SOL_COMMON, LANGUAGE_ELYRAN_STANDARD)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
@@ -44,12 +40,7 @@
 		/mob/living/carbon/human/proc/tie_hair)
 
 	possible_cultures = list(
-		/singleton/origin_item/culture/biesellite,
-		/singleton/origin_item/culture/solarian,
-		/singleton/origin_item/culture/dominia,
-		/singleton/origin_item/culture/coalition,
-		/singleton/origin_item/culture/elyran
-	)
+		/singleton/origin_item/culture/alliance)
 
 	zombie_type = SPECIES_ZOMBIE
 	base_color = "#25032"

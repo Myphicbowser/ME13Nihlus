@@ -29,6 +29,7 @@
 #define CITIZENSHIP_KROGAN "Scattered"
 #define CITIZENSHIP_SALARIAN "Salarian Union"
 #define CITIZENSHIP_TURIAN "Turian Hierarchy"
+#define CITIZENSHIP_ALLIANCE "Systems Alliance"
 
 //religion defines
 #define RELIGION_NONE "None"
