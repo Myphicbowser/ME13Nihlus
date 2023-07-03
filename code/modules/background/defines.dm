@@ -69,9 +69,11 @@
 
 //Mass effect religions
 #define RELIGION_SIARI "Siari"
-#define RELIGION_HOLLOWS "The Hollows"
+#define RELIGION_TRADITION "Krogan Tradition"
 #define RELIGION_SPIRITS "Spirits"
-#define RELIGION_SALARIAN "Agnostic"
+#define RELIGION_TRANSMIGRATIONISM "Transmigrationism"
+#define RELIGION_ZEN "Zen Buddhism"
+#define RELIGION_CONFUCIANISM "Confucianism"
 
 //accent defines
 

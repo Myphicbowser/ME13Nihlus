@@ -1,5 +1,5 @@
-/datum/religion/hollows
-	name = RELIGION_HOLLOWS
+/datum/religion/krogantradition
+	name = RELIGION_TRADITION
 	description = "Krogan are not shown to have strong religious beliefs. The closest they come \
 	is to establish ritualistic burial grounds called the Hollows, where the skulls of their ancestors \
 	are displayed to remind them of 'where we all come from, and where we all go.' The Hollows are as sacred \
