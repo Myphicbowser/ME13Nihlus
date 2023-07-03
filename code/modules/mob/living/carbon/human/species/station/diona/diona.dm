@@ -96,7 +96,7 @@
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE | HAS_SKIN_PRESET
 	flags = NO_BREATHE | NO_SCAN | IS_PLANT | NO_BLOOD | NO_SLIP | NO_CHUBBY | NO_ARTERIES
-	spawn_flags = CAN_JOIN | IS_WHITELISTED | NO_AGE_MINIMUM
+	spawn_flags = IS_WHITELISTED | NO_AGE_MINIMUM
 
 	character_color_presets = list("Default Bark" = "#000000", "Light Bark" = "#141414", "Brown Bark" = "#2b1d0e", "Green Bark" = "#001400")
 

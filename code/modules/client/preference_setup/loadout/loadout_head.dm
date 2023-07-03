@@ -351,12 +351,6 @@
 	path = /obj/item/clothing/head/padded
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/head/himeo
-	display_name = "himean cap"
-	path = /obj/item/clothing/head/softcap/himeo
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/himeo, /singleton/origin_item/origin/ipc_himeo, /singleton/origin_item/origin/free_council)
-
 /datum/gear/head/vysoka
 	display_name = "vysokan fur cap"
 	path = /obj/item/clothing/head/softcap/vysoka
@@ -371,24 +365,6 @@
 	display_name = "san colettish bridge crew cap"
 	path = /obj/item/clothing/head/caphat/bridge_crew/alt
 	allowed_roles = list("Bridge Crew", "Captain", "Executive Officer")
-
-/datum/gear/head/gadpathur
-	display_name = "gadpathurian headgear selection"
-	description = "A selection of headgear from Gadpathur."
-	path = /obj/item/clothing/head/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/gadpathur)
-
-/datum/gear/head/gadpathur/New()
-	..()
-	var/list/gadpathur = list()
-	gadpathur["gadpathurian sidecap"] = /obj/item/clothing/head/gadpathur
-	gadpathur["gadpathurian beret"] = /obj/item/clothing/head/beret/gadpathur
-	gadpathur["gadpathurian engineer beret"] = /obj/item/clothing/head/beret/gadpathur/engineer
-	gadpathur["gadpathurian medical beret"] = /obj/item/clothing/head/beret/gadpathur/medical
-	gadpathur["gadpathurian turban"] = /obj/item/clothing/head/turban/gadpathur
-	gadpathur["gadpathurian patrol cap"] = /obj/item/clothing/head/ushanka/gadpathur
-	gear_tweaks += new /datum/gear_tweak/path(gadpathur)
 
 /datum/gear/head/dominia
 	display_name = "fisanduhian ushanka"

@@ -74,7 +74,7 @@
 
 	primitive_form = SPECIES_MONKEY_TAJARA
 
-	spawn_flags = CAN_JOIN | IS_WHITELISTED
+	spawn_flags = IS_WHITELISTED
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#AFA59E"
