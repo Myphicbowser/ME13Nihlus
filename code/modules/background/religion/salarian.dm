@@ -1,8 +1,4 @@
-/datum/religion/salarian
-	name = RELIGION_SALARIAN
-	description = "While modern Salarians are not notably religious, in ancient times \
-	some salarians practiced a religion that featured the so-called 'stones of life'; Mosiiba, \
-	Mosiino and Mosiives. Some faiths survive however; one of the less favored salarian religions \
-	(which the Council deems a 'cult') worships a goddess, and claims that a certain pattern of overlapping \
-	craters in the southern hemisphere of Trelyn resembles her. Liara T'Soni comments that many salarians \
-	believe in a wheel of life, which some Salarians liken to Hinduism due to a shared belief in reincarnation."
+/datum/religion/reincarnation
+	name = RELIGION_TRANSMIGRATIONISM
+	description = "Transmigrationism is, simply, the belief in reincarnation without extraneous religious trappings. Many Salarians hold this belief, and believe that the process of reincarnation is entirely random, \
+	instead of being reincarnated as specific lifeforms due to consequence of actions in the previous life."
