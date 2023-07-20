@@ -418,10 +418,7 @@
 		/obj/item/storage/box/fancy/cigarettes/rugged = 6,
 		/obj/item/storage/box/fancy/cigarettes = 8,
 		/obj/item/storage/box/fancy/cigarettes/dromedaryco = 5,
-		/obj/item/storage/box/fancy/cigarettes/nicotine = 3,
-		/obj/item/storage/box/fancy/cigarettes/pra = 6,
-		/obj/item/storage/box/fancy/cigarettes/dpra = 6,
-		/obj/item/storage/box/fancy/cigarettes/nka = 6,
+		/obj/item/storage/box/fancy/cigarettes/nicotine = 3,,
 		/obj/item/storage/chewables/rollable = 8,
 		/obj/item/storage/chewables/rollable/unathi = 6,
 		/obj/item/storage/chewables/rollable/fine = 5,
@@ -1169,101 +1166,6 @@
 	random_itemcount = 0
 	light_color = COLOR_BABY_BLUE
 
-/obj/machinery/vending/zora
-	name = "Zo'ra Soda"
-	desc = "An energy drink vendor provided by the Getmore Corporation in partnership with the brood of Ta'Akaix'Xakt'yagz'isk Zo'ra."
-	icon_state = "zoda"
-	icon_vend = "zoda-vend"
-	product_slogans = "Safe for consumption by all species!;Made by hard-working bound drones!;The most refreshing energy drink around!;A product of two thousand years!"
-	product_ads = "Tired? Try some Zo'ra Soda!;Thirsty? Why not Zo'ra Soda?;Bored? Have some Zo'ra Soda!;Zo'ra Soda. Drink up!;ZZZOOO'RRRAAA SSSOOODDDAAA!"
-	vend_id = "zora"
-	products = list(
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/cherry = 5,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/phoron = 5,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/klax = 5,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/cthur = 5,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/venomgrass = 5,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/kois = 5,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/drone = 5
-	)
-	contraband = list(
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/hozm = 5
-	)
-	premium = list(
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/jelly = 3
-	)
-	prices = list(
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/cherry = 29,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/phoron = 29,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/klax = 29,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/cthur = 29,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/venomgrass = 29,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/kois = 29,
-		/obj/item/reagent_containers/food/drinks/cans/zorasoda/drone = 29
-	)
-	idle_power_usage = 211
-	temperature_setting = -1
-	light_color = COLOR_CULT_REINFORCED
-
-/obj/machinery/vending/casino
-	name = "grand romanovich vending machine"
-	desc = "A vending machine commonly found in Crevus' casinos."
-	icon_state = "casinovend"
-	product_slogans = "The House always wins!;Spends your chips right here!;Let Go and Begin Again..."
-	product_ads = "Finding it, though, that's not the hard part. It's letting go."
-	vend_id = "casino"
-	products = list(
-		/obj/item/coin/casino = 50
-	)
-	contraband = list(
-		/obj/item/ammo_magazine/boltaction = 2
-	)
-	premium = list(
-		/obj/item/gun/projectile/shotgun/pump/rifle/blank = 3,
-		/obj/item/ammo_magazine/boltaction/blank = 10,
-		/obj/item/storage/box/fancy/cigarettes/dpra = 5,
-		/obj/item/storage/chewables/tobacco/bad = 5,
-		/obj/item/reagent_containers/food/drinks/bottle/messa_mead = 5,
-		/obj/item/reagent_containers/food/drinks/bottle/victorygin = 5,
-		/obj/item/reagent_containers/food/drinks/bottle/pwine = 5,
-		/obj/item/reagent_containers/food/snacks/hardbread = 5,
-		/obj/item/reagent_containers/food/drinks/cans/adhomai_milk = 5,
-		/obj/item/reagent_containers/food/snacks/adhomian_can = 5,
-		/obj/item/reagent_containers/food/snacks/clam = 5,
-		/obj/item/reagent_containers/food/snacks/tajaran_bread = 5,
-		/obj/item/toy/plushie/farwa = 2,
-		/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/farwacube = 2,
-		/obj/item/razor = 2,
-		/obj/item/toy/balloon/syndicate = 2,
-		/obj/item/grenade/fake = 2,
-		/obj/item/eightball/haunted = 5,
-		/obj/item/spirit_board = 5,
-		/obj/item/device/flashlight/maglight = 5,
-		/obj/item/contraband/poster = 5,
-		/obj/item/spacecash/ewallet/lotto = 15,
-		/obj/item/device/laser_pointer = 5,
-		/obj/item/beach_ball = 1,
-		/obj/item/material/knife/butterfly/switchblade = 2,
-		/obj/item/reagent_containers/hypospray/autoinjector/stimpack = 2,
-		/obj/item/clothing/under/tajaran/summer = 2,
-		/obj/item/clothing/under/pants/tajaran = 2,
-		/obj/item/clothing/under/dress/tajaran =2,
-		/obj/item/clothing/under/dress/tajaran/blue = 2,
-		/obj/item/clothing/under/dress/tajaran/green = 2,
-		/obj/item/clothing/under/dress/tajaran/red = 2,
-		/obj/item/clothing/head/tajaran/circlet = 2,
-		/obj/item/clothing/head/tajaran/circlet/silver = 2,
-		/obj/item/gun/energy/lasertag/red = 2,
-		/obj/item/clothing/suit/armor/riot/laser_tag = 2,
-		/obj/item/gun/energy/lasertag/blue = 2,
-		/obj/item/clothing/suit/armor/riot/laser_tag/blue = 2
-		)
-	prices = list(
-		/obj/item/coin/casino = 500
-	)
-
-	restock_items = FALSE
-	random_itemcount = FALSE
 
 /obj/machinery/vending/mredispenser
 	name = "\improper MRE dispenser"

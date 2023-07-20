@@ -125,8 +125,6 @@
 	// 4 Insulated Gloves (2 Xeno)
 	new /obj/item/clothing/gloves/yellow(src)
 	new /obj/item/clothing/gloves/yellow(src)
-	new /obj/item/clothing/gloves/yellow/specialu(src)
-	new /obj/item/clothing/gloves/yellow/specialt(src)
 	// 3 Electrical Toolboxes
 	new /obj/item/storage/toolbox/electrical(src)
 	new /obj/item/storage/toolbox/electrical(src)
