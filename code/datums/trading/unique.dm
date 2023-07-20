@@ -93,7 +93,7 @@
 		/mob/living/heavy_vehicle/premade/heavy         = TRADER_THIS_TYPE
 	)
 
-	blacklisted_trade_items = list(/datum/species/monkey, /datum/species/machine, /datum/species/bug, /datum/species/diona)
+	blacklisted_trade_items = list(/datum/species/monkey)
 
 	speech = list(
 		"hail_generic"         = "H-hello. Can you hear me? G-good... I have... specific needs... I have a lot to t-trade with you in return of course.",

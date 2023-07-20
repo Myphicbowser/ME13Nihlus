@@ -106,10 +106,7 @@
 		/obj/item/storage/box/fancy/cigarettes/blank = HELMET_GARB_PASS_ICON,
 		/obj/item/storage/box/fancy/cigarettes/dromedaryco = HELMET_GARB_PASS_ICON,
 		/obj/item/storage/box/fancy/cigarettes/nicotine = HELMET_GARB_PASS_ICON,
-		/obj/item/storage/box/fancy/cigarettes/rugged = HELMET_GARB_PASS_ICON,
-		/obj/item/storage/box/fancy/cigarettes/pra = HELMET_GARB_PASS_ICON,
-		/obj/item/storage/box/fancy/cigarettes/dpra = HELMET_GARB_PASS_ICON,
-		/obj/item/storage/box/fancy/cigarettes/nka = HELMET_GARB_PASS_ICON
+		/obj/item/storage/box/fancy/cigarettes/rugged = HELMET_GARB_PASS_ICON
 	)
 	can_hold_strict = TRUE
 

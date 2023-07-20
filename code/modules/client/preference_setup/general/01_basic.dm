@@ -11,10 +11,6 @@
 	S["spawnpoint"] >> pref.spawnpoint
 	S["OOC_Notes"]  >> pref.metadata
 	S["floating_chat_color"] >> pref.floating_chat_color
-	if(istype(all_species[pref.species], /datum/species/machine))
-		S["ipc_tag_status"] >> pref.machine_tag_status
-		S["ipc_serial_number"] >> pref.machine_serial_number
-		S["ipc_ownership_status"] >> pref.machine_ownership_status
 
 /datum/category_item/player_setup_item/general/basic/save_character(var/savefile/S)
 	S["real_name"]  << pref.real_name
@@ -25,10 +21,6 @@
 	S["spawnpoint"] << pref.spawnpoint
 	S["OOC_Notes"]  << pref.metadata
 	S["floating_chat_color"] << pref.floating_chat_color
-	if(istype(all_species[pref.species], /datum/species/machine))
-		S["ipc_tag_status"] << pref.machine_tag_status
-		S["ipc_serial_number"] << pref.machine_serial_number
-		S["ipc_ownership_status"] << pref.machine_ownership_status
 
 // if table_name and pref.var_name is different, then do it like
 // "table_name" = "pref.var_name", as below
@@ -163,22 +155,6 @@
 	dat += "<b>Age:</b> <a href='?src=\ref[src];age=1'>[pref.age]</a><br>"
 	dat += "<b>Spawn Point</b>: <a href='?src=\ref[src];spawnpoint=1'>[pref.spawnpoint]</a><br>"
 	dat += "<b>Floating Chat Color:</b> <a href='?src=\ref[src];select_floating_chat_color=1'><b>[pref.floating_chat_color]</b></a><br>"
-	if(istype(S, /datum/species/machine))
-		if(pref.can_edit_ipc_tag)
-			dat += "<b>Has Tag:</b> <a href='?src=\ref[src];ipc_tag=1'>[pref.machine_tag_status ? "Yes" : "No"]</a><br>"
-		else
-			dat += "<b>Has Tag:</b> [pref.machine_tag_status ? "Yes" : "No"] (<a href='?src=\ref[src];namehelp=1'>?</a>)<br>"
-		if(pref.machine_tag_status)
-			if(!pref.machine_serial_number)
-				var/generated_serial = uppertext(dd_limittext(md5(pref.real_name), 12))
-				pref.machine_serial_number = generated_serial
-			if(pref.can_edit_ipc_tag)
-				dat += "<b>Serial Number:</b> <a href='?src=\ref[src];serial_number=1'>[pref.machine_serial_number]</a><br>"
-				dat += "(<a href='?src=\ref[src];generate_serial=1'>Generate Serial Number</A>)<br>"
-				dat += "<b>Ownership Status:</b> <a href='?src=\ref[src];ownership_status=1'>[pref.machine_ownership_status]</a><br>"
-			else
-				dat += "<b>Serial Number:</b> [pref.machine_serial_number] (<a href='?src=\ref[src];namehelp=1'>?</a>)<br>"
-				dat += "<b>Ownership Status:</b> [pref.machine_ownership_status] (<a href='?src=\ref[src];namehelp=1'>?</a>)<br>"
 	if(config.allow_Metadata)
 		dat += "<b>OOC Notes:</b> <a href='?src=\ref[src];metadata=1'> Edit </a><br>"
 
