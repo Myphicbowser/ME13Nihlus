@@ -53,10 +53,6 @@
 	gamehelm["purple game-helm"] = /obj/item/gamehelm/purple
 	gear_tweaks += new /datum/gear_tweak/path(gamehelm)
 
-/datum/gear/toy/battlemonsters
-	display_name = "battlemonsters starter deck"
-	path = /obj/item/battle_monsters/wrapped
-
 /datum/gear/toy/squidplushie
 	display_name = "colourable squid plushie"
 	path = /obj/item/toy/plushie/squidcolour
