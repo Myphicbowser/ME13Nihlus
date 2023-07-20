@@ -94,12 +94,10 @@
 		/obj/item/storage/wallet                              = TRADER_THIS_TYPE,
 		/obj/item/storage/photo_album                         = TRADER_THIS_TYPE,
 		/obj/item/clothing/glasses                            = TRADER_SUBTYPES_ONLY,
-		/obj/item/clothing/glasses/threedglasses/fluff        = TRADER_BLACKLIST_ALL, // Custom items
 		/obj/item/clothing/glasses/hud                        = TRADER_BLACKLIST_ALL, //don't want mech/advanced stuff
 		/obj/item/clothing/glasses/sunglasses/blindfold/tape  = TRADER_BLACKLIST, // Literally just tape over someone's eyes
 		/obj/item/clothing/glasses/chameleon                  = TRADER_BLACKLIST, // traitor stuff
 		/obj/item/clothing/glasses/sunglasses/bst             = TRADER_BLACKLIST, // BlueSpaceTech glasses
-		/obj/item/clothing/glasses/welding/fluff              = TRADER_BLACKLIST_ALL // Custom items
 	)
 
 	insult_drop = 0

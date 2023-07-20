@@ -210,7 +210,6 @@ STOCK_ITEM_COMMON(gloves, 3.3)
 
 	var/list/exclusion = list(
 		/obj/item/clothing/gloves,
-		/obj/item/clothing/gloves/fluff,
 		/obj/item/clothing/gloves/swat/bst,
 		/obj/item/clothing/gloves/powerfist,
 		/obj/item/clothing/gloves/claws
