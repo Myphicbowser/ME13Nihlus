@@ -991,24 +991,6 @@ proc/admin_notice(var/message, var/rights)
 	S.harvest(usr,0,0,1)
 	log_admin("[key_name(usr)] spawned [seedtype] fruit at ([usr.x],[usr.y],[usr.z])")
 
-/datum/admins/proc/spawn_custom_item()
-	set category = "Debug"
-	set desc = "Spawn a custom item."
-	set name = "Spawn Custom Item"
-
-	if(!check_rights(R_SPAWN))	return
-
-	var/owner = input("Select a ckey.", "Spawn Custom Item") as null|anything in custom_items
-	if(!owner|| !custom_items[owner])
-		return
-
-	var/list/possible_items = custom_items[owner]
-	var/datum/custom_item/item_to_spawn = input("Select an item to spawn.", "Spawn Custom Item") as null|anything in possible_items
-	if(!item_to_spawn)
-		return
-
-	item_to_spawn.spawn_item(get_turf(usr))
-
 
 /datum/admins/proc/spawn_plant(seedtype in SSplants.seeds)
 	set category = "Debug"

@@ -276,8 +276,6 @@ INITIALIZE_IMMEDIATE(/mob/abstract/new_player)
 	//Find our spawning point.
 	var/join_message = SSjobs.LateSpawn(character, rank)
 
-	equip_custom_items(character)
-
 	character.lastarea = get_area(loc)
 	// Moving wheelchair if they have one
 	if(character.buckled_to && istype(character.buckled_to, /obj/structure/bed/stool/chair/office/wheelchair))

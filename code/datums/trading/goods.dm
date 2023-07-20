@@ -137,12 +137,9 @@
 		/obj/item/clothing/under/syndicate                       = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/under/tactical                        = TRADER_BLACKLIST,
 		/obj/item/clothing/under/punpun                          = TRADER_BLACKLIST,
-		/obj/item/clothing/under/fluff                           = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/under/rank/centcom_officer/bst        = TRADER_BLACKLIST,
 		/obj/item/clothing/suit/storage/hooded                   = TRADER_SUBTYPES_ONLY,
-		/obj/item/clothing/suit/storage/hooded/wintercoat/fluff  = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/suit/storage/toggle/labcoat           = TRADER_ALL,
-		/obj/item/clothing/suit/storage/toggle/labcoat/fluff     = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/suit/storage/toggle/varsity                          = TRADER_ALL,
 		/obj/item/clothing/suit/storage/toggle/track             = TRADER_ALL,
 		/obj/item/clothing/suit/jacket/puffer                    = TRADER_ALL,
@@ -172,16 +169,12 @@
 		/obj/item/clothing/accessory/holster            = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/accessory/medal              = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/accessory/storage            = TRADER_BLACKLIST_ALL,
-		/obj/item/clothing/accessory/fluff              = TRADER_BLACKLIST_ALL,
-		/obj/item/clothing/accessory/armband/fluff      = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/gloves                       = TRADER_SUBTYPES_ONLY,
 		/obj/item/clothing/gloves/lightrig              = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/gloves/rig                   = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/gloves/chameleon             = TRADER_BLACKLIST,
 		/obj/item/clothing/gloves/force                 = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/gloves/swat/bst              = TRADER_BLACKLIST,
-		/obj/item/clothing/wrists/watch/fluff           = TRADER_BLACKLIST_ALL,
-		/obj/item/clothing/gloves/fluff                 = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/gloves/powerfist             = TRADER_BLACKLIST,
 		/obj/item/clothing/gloves/claws                 = TRADER_BLACKLIST,
 		/obj/item/clothing/gloves/brassknuckles         = TRADER_BLACKLIST,
@@ -201,10 +194,7 @@
 		/obj/item/clothing/head/radiation               = TRADER_BLACKLIST,
 		/obj/item/clothing/head/tajaran                 = TRADER_BLACKLIST,
 		/obj/item/clothing/head/welding                 = TRADER_BLACKLIST,
-		/obj/item/clothing/head/fluff                   = TRADER_BLACKLIST_ALL,
-		/obj/item/clothing/head/det/fluff               = TRADER_BLACKLIST_ALL,
-		/obj/item/clothing/head/winterhood              = TRADER_BLACKLIST_ALL,
-		/obj/item/clothing/head/beret/engineering/fluff = TRADER_BLACKLIST_ALL
+		/obj/item/clothing/head/winterhood              = TRADER_BLACKLIST_ALL
 	)
 
 /*
@@ -355,8 +345,6 @@ Sells devices, odds and ends, and medical stuff
 		/obj/item/gun/energy/plasmacutter         = TRADER_THIS_TYPE,
 		/obj/item/clothing/head/helmet/space/void/mining = TRADER_THIS_TYPE,
 		/obj/item/clothing/suit/space/void/mining        = TRADER_THIS_TYPE,
-		/obj/item/clothing/head/helmet/space/void/mining/fluff = TRADER_BLACKLIST, //No custom items
-		/obj/item/clothing/suit/space/void/mining/fluff        = TRADER_BLACKLIST, //No custom items
 		/obj/machinery/mining/drill                      = TRADER_THIS_TYPE,
 		/obj/machinery/mining/brace                      = TRADER_THIS_TYPE,
 		/mob/living/heavy_vehicle/premade/ripley                      = TRADER_THIS_TYPE,
