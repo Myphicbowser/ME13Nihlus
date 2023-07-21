@@ -308,14 +308,6 @@
 	path = /obj/item/clothing/head/beanie
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/head/nonla
-	display_name = "non la hat"
-	path = /obj/item/clothing/head/nonla
-	origin_restriction = list(/singleton/origin_item/origin/earth, /singleton/origin_item/origin/new_hai_phong)
-/datum/gear/head/konyang
-	display_name = "gat"
-	path = /obj/item/clothing/head/konyang
-
 /datum/gear/head/iac
 	display_name = "IAC headgear selection"
 	description = "A selection of hats worn by Interstellar Aid Corps volunteers."

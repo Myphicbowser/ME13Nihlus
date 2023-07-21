@@ -192,7 +192,6 @@
 		/obj/item/clothing/head/helmet                  = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/head/lightrig                = TRADER_BLACKLIST_ALL,
 		/obj/item/clothing/head/radiation               = TRADER_BLACKLIST,
-		/obj/item/clothing/head/tajaran                 = TRADER_BLACKLIST,
 		/obj/item/clothing/head/welding                 = TRADER_BLACKLIST,
 		/obj/item/clothing/head/winterhood              = TRADER_BLACKLIST_ALL
 	)

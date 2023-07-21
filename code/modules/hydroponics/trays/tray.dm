@@ -166,33 +166,6 @@
 	if(response == "Yes")
 		harvest()
 
-/obj/machinery/portable_atmospherics/hydroponics/attack_generic(var/mob/user)
-
-	// Why did I ever think this was a good idea. TODO: move this onto the nymph mob.
-	if(istype(user,/mob/living/carbon/alien/diona))
-		var/mob/living/carbon/alien/diona/nymph = user
-
-		if (closed_system)
-			to_chat(user, "The lid is closed, you don't have hands to open it and reach the plants inside!")
-			return
-		if(nymph.stat == DEAD || nymph.paralysis || nymph.weakened || nymph.stunned || nymph.restrained())
-			return
-		if(weedlevel > 0)
-			nymph.ingested.add_reagent(/singleton/reagent/nutriment, weedlevel/6)
-			weedlevel = 0
-			nymph.visible_message("<span class='notice'><b>[nymph]</b> roots through [src], ripping out weeds and eating them noisily.</span>","<span class='notice'>You root through [src], ripping out weeds and eating them noisily.</span>")
-			return
-		if (dead)//Let nymphs eat dead plants
-			nymph.ingested.add_reagent(/singleton/reagent/nutriment, 1)
-			nymph.visible_message("<span class='notice'><b>[nymph]</b> rips out the dead plants from [src], and loudly munches them.</span>","<span class='notice'>You root out the dead plants in [src], eating them with loud chewing sounds.</span>")
-			remove_dead(user)
-			return
-		if (harvest)
-			harvest(user)
-			return
-		else
-			nymph.visible_message("<span class='notice'><b>[nymph]</b> rolls around in [src] for a bit.</span>","<span class='notice'>You roll around in [src] for a bit.</span>")
-		return
 
 /obj/machinery/portable_atmospherics/hydroponics/New()
 	..()

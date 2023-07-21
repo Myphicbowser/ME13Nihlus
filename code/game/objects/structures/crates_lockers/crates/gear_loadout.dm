@@ -339,23 +339,9 @@
 	new /obj/item/ammo_magazine/c38(src)
 	new /obj/item/ammo_magazine/c38(src)
 
-/obj/structure/closet/crate/secure/gear_loadout/ninja/breacher
-	associated_hardsuit = /obj/item/rig/unathi/fancy/ninja
-
 /obj/structure/closet/crate/secure/gear_loadout/ninja/breacher/fill()
 	..()
 	new /obj/item/gun/energy/pistol/hegemony(src)
-
-/obj/structure/closet/crate/secure/gear_loadout/ninja/tesla
-	associated_hardsuit = /obj/item/rig/tesla/ninja
-
-/obj/structure/closet/crate/secure/gear_loadout/ninja/tesla/fill()
-	..()
-	new /obj/item/device/augment_implanter/advanced_tesla(src)
-	new /obj/item/clothing/accessory/holster/armpit/brown(src)
-	new /obj/item/gun/projectile/pistol/adhomai(src)
-	new /obj/item/ammo_magazine/mc9mm(src)
-	new /obj/item/ammo_magazine/mc9mm(src)
 
 /obj/structure/closet/crate/secure/gear_loadout/ninja/strike
 	associated_hardsuit = /obj/item/rig/strike/ninja

@@ -5,5 +5,5 @@
 # Ranks can be anything defined in admin_ranks.json          ~Carn   #
 ######################################################################
 
-okithedoki - Project Lead
+Sgtmind - Project Lead
 myphicbowser - Project Lead

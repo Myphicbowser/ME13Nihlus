@@ -132,14 +132,6 @@
 		return TRUE
 	return FALSE
 
-/datum/bounty/item/assistant/tajcard
-	name = "Collectable Card"
-	description = "%PERSONNAME is offering a bonus to any station that can help them expand their collection of collectable tajaran cards."
-	reward_low = 1800
-	reward_high = 2400
-	required_count = 2
-	wanted_types = list(/obj/item/tajcard)
-
 /datum/bounty/item/assistant/jetpack
 	name = "Jetpacks"
 	description = "We're engaging in an EVA training initiative for new miners. Ship us a few jetpacks for a station bonus."

@@ -835,7 +835,7 @@ mob/living/carbon/human/proc/change_monitor()
 			earpain(3, TRUE, 1)
 		else if (T in range(src, 2))
 			earpain(2, TRUE, 2)
-	
+
 	for (var/mob/living/carbon/human/T in hearers(2, src) - src)
 		if(T.get_hearing_protection() >= EAR_PROTECTION_MAJOR)
 			continue
@@ -1110,22 +1110,6 @@ mob/living/carbon/human/proc/change_monitor()
 
 		to_chat(src, output)
 
-/mob/living/carbon/human/proc/check_tag()
-	set name = "Check Tag"
-	set desc = "Run diagnostics on your tag to display its information."
-	set category = "Abilities"
-
-	if(use_check_and_message(usr))
-		return
-
-	var/obj/item/organ/internal/ipc_tag/tag = internal_organs_by_name[BP_IPCTAG]
-	if(isnull(tag) || !tag)
-		to_chat(src, SPAN_WARNING("Error: No Tag Found."))
-		return
-	to_chat(src, SPAN_NOTICE("[capitalize_first_letters(tag.name)]:"))
-	to_chat(src, SPAN_NOTICE("<b>Serial Number:</b> [tag.serial_number]"))
-	to_chat(src, SPAN_NOTICE("<b>Ownership Status:</b> [tag.ownership_info]"))
-	to_chat(src, SPAN_NOTICE("<b>Citizenship Info:</b> [tag.citizenship_info]"))
 
 /mob/living/carbon/human/proc/sonar_ping()
 	set name = "Psychic Ping"
@@ -1263,7 +1247,7 @@ mob/living/carbon/human/proc/change_monitor()
 	if(!istype(M))
 		to_chat(usr, SPAN_WARNING("You aren't allowed to rename \the [src]."))
 		return
-	 
+
 	if(usr == src)
 		to_chat(usr, SPAN_WARNING("You're a simple creature, you can't rename yourself!"))
 		return

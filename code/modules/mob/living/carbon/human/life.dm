@@ -75,9 +75,6 @@
 		//Handles regenerating stamina if we have sufficient air and no oxyloss
 		handle_stamina()
 
-		if (is_diona())
-			diona_handle_light(DS)
-
 		handle_shared_dreaming()
 
 	if(!handle_some_updates())
@@ -220,30 +217,26 @@
 	total_radiation = Clamp(total_radiation,0,100)
 
 	if (total_radiation)
-		if(src.is_diona())
-			diona_handle_regeneration(get_dionastats())
-			return
-		else
-			var/damage = 0
-			total_radiation -= 1 * RADIATION_SPEED_COEFFICIENT
-			if(prob(25))
-				damage = 1
+		var/damage = 0
+		total_radiation -= 1 * RADIATION_SPEED_COEFFICIENT
+		if(prob(25))
+			damage = 1
 
-			if (total_radiation > 50)
-				damage = 1
-				total_radiation -= 1 * RADIATION_SPEED_COEFFICIENT
-				if(prob(5) && prob(100 * RADIATION_SPEED_COEFFICIENT))
-					src.apply_radiation(-5 * RADIATION_SPEED_COEFFICIENT)
-					to_chat(src, "<span class='warning'>You feel weak.</span>")
-					Weaken(3)
-					if(!lying)
-						emote("collapse")
-				if(prob(5) && prob(100 * RADIATION_SPEED_COEFFICIENT) && species.name == SPECIES_HUMAN) //apes go bald
-					if((h_style != "Bald" || f_style != "Shaved" ))
-						to_chat(src, "<span class='warning'>Your hair falls out.</span>")
-						h_style = "Bald"
-						f_style = "Shaved"
-						update_hair()
+		if (total_radiation > 50)
+			damage = 1
+			total_radiation -= 1 * RADIATION_SPEED_COEFFICIENT
+			if(prob(5) && prob(100 * RADIATION_SPEED_COEFFICIENT))
+				src.apply_radiation(-5 * RADIATION_SPEED_COEFFICIENT)
+				to_chat(src, "<span class='warning'>You feel weak.</span>")
+				Weaken(3)
+				if(!lying)
+					emote("collapse")
+			if(prob(5) && prob(100 * RADIATION_SPEED_COEFFICIENT) && species.name == SPECIES_HUMAN) //apes go bald
+				if((h_style != "Bald" || f_style != "Shaved" ))
+					to_chat(src, "<span class='warning'>Your hair falls out.</span>")
+					h_style = "Bald"
+					f_style = "Shaved"
+					update_hair()
 
 			if (total_radiation > 75)
 				src.apply_radiation(-1 * RADIATION_SPEED_COEFFICIENT)
@@ -315,9 +308,6 @@
 	//Moved pressure calculations here for use in skip-processing check.
 	var/pressure = environment.return_pressure()
 	var/adjusted_pressure = calculate_affecting_pressure(pressure)
-
-	if (consume_nutrition_from_air)
-		environment.remove(diona_handle_air(get_dionastats(), pressure))
 
 	//Check for contaminants before anything else because we don't want to skip it.
 	for(var/g in environment.gas)
@@ -427,9 +417,6 @@
 			pressure_alert = -2
 		else
 			pressure_alert = -1
-
-	if (is_diona())
-		diona_handle_temperature(DS)
 
 /mob/living/carbon/human/proc/stabilize_body_temperature()
 	if (species.passive_temp_gain) // We produce heat naturally.
@@ -1154,7 +1141,7 @@
 						"Ennoia be with you, it's a bit too dark..."
 					)
 					to_chat(src, SPAN_WARNING(pick(assunzione_messages)))
-		
+
 		if(HAS_TRAIT(src, TRAIT_ORIGIN_LIGHT_SENSITIVE))
 			if(T.get_lumcount() > 0.8)
 				if(prob(1))

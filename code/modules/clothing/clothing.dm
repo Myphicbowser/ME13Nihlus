@@ -586,13 +586,6 @@
 		if(success != ALREADY_WEARING_HAT)
 			D.wear_hat(src)
 			success = WEAR_HAT
-	else if(istype(user, /mob/living/carbon/alien/diona))
-		var/mob/living/carbon/alien/diona/D = user
-		if(D.hat)
-			success = ALREADY_WEARING_HAT
-		else
-			D.wear_hat(src)
-			success = WEAR_HAT
 
 	if(!success)
 		return FALSE

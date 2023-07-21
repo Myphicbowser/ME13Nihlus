@@ -371,9 +371,6 @@ var/global/list/additional_antag_types = list()
 	for(var/mob/M in player_list)
 		if(M.client)
 			clients++
-			if(M.stat != DEAD && isipc(M))
-				var/mob/living/carbon/human/H = M
-				machine.update_tag(H, H.client)
 			if(M.stat != DEAD)
 				var/turf/playerTurf = get_turf(M)
 				var/area/playerArea = get_area(playerTurf)

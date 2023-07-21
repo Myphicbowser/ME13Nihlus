@@ -109,7 +109,6 @@
 	name_language = LANGUAGE_UNATHI
 	origin = "Azazi Bulk Supply Guild"
 	possible_trading_items = list(
-		/obj/item/rig/unathi                    = TRADER_ALL,
 		/obj/item/rig/internalaffairs           = TRADER_THIS_TYPE,
 		/obj/item/rig/industrial                = TRADER_THIS_TYPE,
 		/obj/item/rig/eva                       = TRADER_THIS_TYPE,

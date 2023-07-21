@@ -12,8 +12,6 @@
 		"Stealth Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/stealth,
 		"Solarian Military Hardsuit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/sol,
 		"Coalition Gunslinger Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/gunslinger,
-		"Hegemony Breacher Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/breacher,
-		"People's Republic Tesla Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/tesla,
 		"Eridani PMC Strike Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/strike,
 		"Jinxiang Pattern Combat Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/jinxiang,
 		"Elyran Battlesuit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/elyra,

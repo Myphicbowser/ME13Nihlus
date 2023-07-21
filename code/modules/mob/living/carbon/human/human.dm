@@ -112,7 +112,6 @@
 
 	QDEL_NULL(vessel)
 
-	QDEL_NULL(DS)
 	// qdel and null out our equipment.
 	QDEL_NULL(shoes)
 	QDEL_NULL(belt)
@@ -195,11 +194,6 @@
 			var/eta_status = evacuation_controller.get_status_panel_eta()
 			if(eta_status)
 				stat(null, eta_status)
-		if(is_diona() && DS)
-			stat("Biomass:", "[round(nutrition)] / [max_nutrition]")
-			stat("Energy:", "[round(DS.stored_energy)] / [round(DS.max_energy)]")
-			if(DS.regen_limb)
-				stat("Regeneration Progress:", " [round(DS.regen_limb_progress)] / [LIMB_REGROW_REQUIREMENT]")
 		if (internal)
 			if (!internal.air_contents)
 				qdel(internal)
@@ -234,9 +228,6 @@
 
 	var/b_loss = null
 	var/f_loss = null
-
-	if (is_diona() == DIONA_WORKER)//Thi
-		diona_contained_explosion_damage(severity)
 
 	switch (severity)
 		if (1.0)
@@ -1453,9 +1444,6 @@
 		if(hud_used)
 			qdel(hud_used)
 		hud_used = new /datum/hud(src)
-
-	if (src.is_diona())
-		setup_gestalt(1)
 
 	burn_mod = species.burn_mod
 	brute_mod = species.brute_mod

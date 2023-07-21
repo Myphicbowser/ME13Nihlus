@@ -1234,9 +1234,6 @@
 		/obj/item/melee/energy/axe = 0.5,
 		/obj/item/gun/projectile/automatic/terminator = 0.5,
 		/obj/item/rig/military = 0.5,
-		/obj/item/rig/unathi/fancy = 0.5,
-		/obj/item/rig/vaurca/minimal = 0.5,
-		/obj/item/anomaly_core = 0.5,
 		/obj/item/reagent_containers/food/drinks/bottle/vintage_wine = 0.1
 	)
 
@@ -1266,7 +1263,6 @@
 		/obj/item/stack/material/plasteel/full = 0.8,
 		/obj/random/voidsuit = 1,
 		/obj/item/rfd/construction = 0.4,
-		/obj/item/vaurca/box = 0.1,
 		/obj/item/device/personal_shield = 0.1,
 		/obj/item/storage/secure/briefcase/money = 0.1
 		)

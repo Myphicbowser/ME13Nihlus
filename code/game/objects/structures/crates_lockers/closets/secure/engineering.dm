@@ -41,8 +41,6 @@
 		/obj/item/clothing/under/rank/chief_engineer = 1,
 		/obj/item/clothing/head/hardhat/white = 1,
 		/obj/item/clothing/gloves/yellow = 1,
-		/obj/item/clothing/gloves/yellow/specialu = 1,
-		/obj/item/clothing/gloves/yellow/specialt = 1,
 		/obj/item/clothing/shoes/brown = 1,
 		/obj/item/device/radio/headset/heads/ce = 1,
 		/obj/item/device/radio/headset/heads/ce/alt = 1,

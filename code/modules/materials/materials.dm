@@ -387,24 +387,6 @@
 	hitsound = 'sound/weapons/smash.ogg'
 	weapon_hitsound = 'sound/weapons/metalhit.ogg'
 
-/material/diona
-	name = MATERIAL_DIONA
-	icon_colour = null
-	stack_type = null
-	icon_base = "biomass"
-	integrity = 100
-	// below is same as wood
-	melting_point = T0C + 300
-	ignition_point = T0C + 288
-	golem = SPECIES_GOLEM_WOOD
-	hitsound = 'sound/effects/woodhit.ogg'
-
-/material/diona/place_dismantled_product()
-	return
-
-/material/diona/place_dismantled_girder(var/turf/target)
-	new /obj/structure/diona/vines(target)
-
 /material/steel/holographic
 	name = "holo" + DEFAULT_WALL_MATERIAL
 	display_name = DEFAULT_WALL_MATERIAL
@@ -716,7 +698,7 @@
 	weapon_hitsound = 'sound/weapons/woodenhit.ogg'
 	shatter_sound = /singleton/sound_category/wood_break_sound
 
-/material/wood/birch 
+/material/wood/birch
 	name = MATERIAL_BIRCH
 	stack_type = /obj/item/stack/material/wood/coloured/birch
 	icon_colour = WOOD_COLOR_BIRCH
@@ -727,7 +709,7 @@
 	icon_colour = WOOD_COLOR_RICH
 
 /material/wood/maple
-	name = MATERIAL_MAPLE  
+	name = MATERIAL_MAPLE
 	stack_type = /obj/item/stack/material/wood/coloured/maple
 	icon_colour = WOOD_COLOR_PALE
 

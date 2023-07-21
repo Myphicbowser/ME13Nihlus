@@ -446,23 +446,6 @@
 				to_chat(src, SPAN_WARNING("\The [T] obstructs your movement!"))
 				return
 
-			for(var/mob/living/L in T)
-				if(L.is_diona() == DIONA_WORKER)
-					to_chat(src, SPAN_DANGER("You struggle briefly as you are photovored into \the [L], trapped within a nymphomatic husk!"))
-					var/mob/living/carbon/alien/diona/D = new /mob/living/carbon/alien/diona(L)
-					var/mob/living/simple_animal/shade/bluespace/BS = use_mob
-					if (!(/mob/living/carbon/proc/echo_eject in L.verbs))
-						L.verbs.Add(/mob/living/carbon/proc/echo_eject)
-					BS.mind.transfer_to(D)
-					D.echo = 1
-					D.set_stat(CONSCIOUS)
-					D.gestalt = L
-					D.sync_languages(D.gestalt)
-					D.update_verbs()
-					D.forceMove(L)
-					qdel(BS)
-					return
-
 			use_mob.forceMove(get_step(use_mob, direct))
 			use_mob.dir = direct
 

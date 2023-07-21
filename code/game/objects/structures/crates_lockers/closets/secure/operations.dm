@@ -63,13 +63,10 @@
 	new /obj/item/clothing/suit/storage/toggle/labcoat(src)
 	new /obj/item/clothing/gloves/black(src)
 	new /obj/item/clothing/gloves/yellow(src)
-	new /obj/item/clothing/gloves/yellow/specialu(src)
-	new /obj/item/clothing/gloves/yellow/specialt(src)
 	new /obj/item/clothing/under/rank/machinist/orion(src)
 	new /obj/item/clothing/under/rank/machinist/heph(src)
 	new /obj/item/clothing/shoes/black(src)
 	new /obj/item/device/multitool(src)
-	new /obj/item/ipc_tag_scanner(src)
 	new /obj/item/device/robotanalyzer(src)
 
 // Miner

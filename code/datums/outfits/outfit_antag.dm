@@ -258,7 +258,6 @@
 		/obj/item/clothing/suit/storage/toggle/leather_jacket/military,
 		/obj/item/clothing/suit/storage/toggle/leather_jacket/military/old,
 		/obj/item/clothing/suit/storage/toggle/leather_jacket/military/tan,
-		/obj/item/clothing/suit/storage/toggle/tajaran,
 		/obj/item/clothing/suit/storage/toggle/trench,
 		/obj/item/clothing/suit/storage/toggle/trench/grey,
 		/obj/item/clothing/suit/storage/toggle/trench/colorable/random
@@ -302,7 +301,6 @@
 		/obj/item/clothing/head/nonla,
 		/obj/item/clothing/head/helmet/bucket,
 		/obj/item/clothing/head/helmet/material/makeshift/plasteel,
-		/obj/item/clothing/head/helmet/kettle,
 		/obj/item/clothing/head/helmet/tank/olive,
 		/obj/item/clothing/head/softcap,
 		/obj/item/clothing/head/softcap/himeo,

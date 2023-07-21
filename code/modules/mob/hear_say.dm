@@ -83,35 +83,11 @@
 		return TRUE
 	return FALSE
 
-/mob/living/carbon/cant_hear()
-	. = ..()
-	if(.)
-		var/datum/dionastats/DS = get_dionastats()
-		if(DS?.nym)
-			return FALSE
-
-/mob/living/carbon/alien/diona/cant_hear()
-	. = ..()
-	if(. && detached && gestalt)
-		return FALSE
-
 /mob/proc/on_hear_say(var/message)
 	to_chat(src, message)
 	if(vr_mob)
 		to_chat(vr_mob, message)
 
-/mob/living/carbon/on_hear_say(var/message)
-	..()
-	var/datum/dionastats/DS = get_dionastats()
-	if(DS?.nym)
-		var/mob/living/carbon/alien/diona/D = DS.nym.resolve()
-		if(D)
-			to_chat(D, message)
-
-/mob/living/carbon/alien/diona/on_hear_say(var/message)
-	to_chat(src, message)
-	if(detached && gestalt)
-		to_chat(gestalt, message)
 
 /mob/living/silicon/on_hear_say(var/message)
 	var/time = say_timestamp()

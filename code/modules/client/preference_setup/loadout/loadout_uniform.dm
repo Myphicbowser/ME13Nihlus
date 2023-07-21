@@ -230,64 +230,7 @@
 	display_name = "tacticool turtleneck"
 	path = /obj/item/clothing/under/syndicate/tacticool
 
-/datum/gear/uniform/dominia
-	display_name = "dominian suit selection"
-	description = "A selection of Dominian suits."
-	path = /obj/item/clothing/under/dominia
-	flags = GEAR_HAS_DESC_SELECTION
-	culture_restriction = list(/singleton/origin_item/culture/dominia, /singleton/origin_item/culture/dominian_unathi)
 
-/datum/gear/uniform/dominia/New()
-	..()
-	var/list/suit = list()
-	suit["dominian suit, red"] = /obj/item/clothing/under/dominia/imperial_suit
-	suit["dominian suit, black"] = /obj/item/clothing/under/dominia/imperial_suit/black
-	suit["strelitz dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/strelitz
-	suit["volvalaad dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/volvalaad
-	suit["kazhkz dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/kazhkz
-	suit["caladius dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/caladius
-	suit["zhao dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/zhao
-	suit["lyodsuit"] = /obj/item/clothing/under/dominia/lyodsuit
-	suit["hoodied lyodsuit"] = /obj/item/clothing/under/dominia/lyodsuit/hoodie
-	gear_tweaks += new /datum/gear_tweak/path(suit)
-
-/datum/gear/uniform/dominia_dress
-	display_name = "dominian dress selection"
-	description = "A selection of Dominian dresses."
-	path = /obj/item/clothing/under/dominia/dress
-	culture_restriction = list(/singleton/origin_item/culture/dominia, /singleton/origin_item/culture/dominian_unathi)
-
-/datum/gear/uniform/dominia_dress/New()
-	..()
-	var/list/suit = list()
-	for(var/dress in typesof(/obj/item/clothing/under/dominia/dress/noble))
-		var/obj/item/clothing/under/dominia/dress/noble/D = new dress
-		suit["[D.name]"] = D.type
-	suit["dominia noble greatdress"] = /obj/item/clothing/under/dominia/dress
-	for(var/dress in typesof(/obj/item/clothing/under/dominia/dress/fancy))
-		var/obj/item/clothing/under/dominia/dress/D = new dress //I'm not typing all this shit manually. Jesus christ.
-		suit["[D.name]"] = D.type
-	gear_tweaks += new /datum/gear_tweak/path(suit)
-
-/datum/gear/uniform/dominia_consular
-	display_name = "dominian consular clothing selection"
-	description = "A selection of Dominian clothing belonging to the Diplomatic Service."
-	path = /obj/item/clothing/under/dominia/consular
-	allowed_roles = list("Consular Officer")
-	culture_restriction = list(/singleton/origin_item/culture/dominia, /singleton/origin_item/culture/dominian_unathi, /singleton/origin_item/culture/diona_dominia)
-
-/datum/gear/uniform/dominia_consular/New()
-	..()
-	var/list/consular = list()
-	consular["dominian consular officer's uniform, masculine"] = /obj/item/clothing/under/dominia/consular
-	consular["dominian consular officer's uniform, feminine"] = /obj/item/clothing/under/dominia/consular/dress
-	gear_tweaks += new /datum/gear_tweak/path(consular)
-
-/datum/gear/uniform/fisanduhian_sweater
-	display_name = "fisanduhian sweater"
-	path = /obj/item/clothing/under/dominia/sweater
-	flags = GEAR_HAS_DESC_SELECTION
-	culture_restriction = list(/singleton/origin_item/culture/dominia, /singleton/origin_item/culture/dominian_unathi)
 
 /datum/gear/uniform/elyra_holo
 	display_name = "elyran holographic suit selection"

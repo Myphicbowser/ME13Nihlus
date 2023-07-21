@@ -405,7 +405,7 @@
 				var/blunt_eligible = FALSE
 				var/maim_bonus = 0
 				var/dam_flags = 0
-				
+
 				if(isitem(used_weapon))
 					var/obj/item/W = used_weapon
 					dam_flags = W.damage_flags()
@@ -605,10 +605,6 @@ This function completely restores a damaged organ to perfect condition.
 
 		if(!(status & ORGAN_BROKEN))
 			perma_injury = 0
-
-		if(status & ORGAN_NYMPH)
-			var/datum/component/nymph_limb/N = GetComponent(/datum/component/nymph_limb)
-			N.handle_nymph(src)
 
 		if(surge_damage && (status & ORGAN_ASSISTED))
 			tick_surge_damage() //Yes, this being here is intentional since this proc does not call ..() unless the owner is null.

@@ -96,11 +96,6 @@ datum/design/item/tool/advanced_light_replacer
 	materials = list(DEFAULT_WALL_MATERIAL = 30, MATERIAL_GLASS = 20)
 	build_path = /obj/item/device/analyzer
 
-/datum/design/item/tool/tag_scanner
-	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 5000, MATERIAL_GLASS = 2500)
-	build_path = /obj/item/ipc_tag_scanner
-
 /datum/design/item/tool/plant_analyzer
 	desc = "A hand-held plant scanner for hydroponicists and xenobotanists."
 	req_tech = list(TECH_MAGNET = 2, TECH_BIO = 3)
